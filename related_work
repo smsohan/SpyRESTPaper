@@ -1,0 +1,405 @@
+Related Work
+
+Web API Documentation
+ -> API Specification
+ -> Knowledge extraction
+
+Industry
+  -> Web API Specification
+  -> Client code generation
+
+ Gap?
+  -> API Documentation Generation
+
+API Documentation
+  -> Contents
+  -> Learnability
+  -> Crowd
+  -> Evolution
+
+  Gap?
+    -> How to use for Web APIs?
+
+Automated, customizable, live explorable, version aware
+
+
+
+++ Web API
+++ API Specification
+
+* [2013] Validation and Interactivity of Web API Documentation
+
+In this paper we present a Web Interface Language (WIfL) vocabulary for API documentation
+
+ the majority of web
+APIs today are documented in English prose, formatted in
+HTML, and do not follow a convention for machine-readable
+processing
+
+Thirdly, it is quite common for API documents to include
+example client-server interactions, which are used to illustrate
+idiomatic uses of the API. A 2010 study [4] found that
+75% of the studied APIs provided example requests and
+responses
+
+. Examples are often hand-crafted, and so are subject
+to typographic error, and to becoming out-of-date as the API
+specification changes.
+
+These features lead us to our requirements: a machinereadable
+API description format which can be embedded into
+HTML, supports hyperlinking, and allows for specification and
+validation of example dialogs
+
+Resource, Request, Parameter, Response, Representation
+
+Example Request, Example Response, Example Headers
+
+Inheritance, api keys, common headers
+
+
+The most common languages for web API description are
+WADL [6] and WSDL [5]. These (especially WADL) have a
+similar API model to WIfL, but they are serialized as XML
+rather than being embedded in HTML. Other XML formats
+include REST Chart [21] and RIDDL [22]
+
+++ Web API
+++ API Specifications
+
+* [2011] Lightweight semantics for automating the invocation of Web APIs
+
+We present an approach for employing lightweight semantics for supporting the automated invocation of Web APIs.
+
+ In fact, only about a third of the APIs are currently conforming to the REST principles, while the majority ignore these best-practices and define interfaces in terms of operations instead of resources [3]
+
+
+ Both MicroWSMO [5] and SA-REST [6] rely on syntactically structuring the description by marking service properties within the HTML and subsequently liking these to semantic entities, based on adapting the SAWSDL [7] approach
+
+ As part of our previous work, we found out that currently about 40% of the APIs do not state the HTTP method to be used [3].
+
+ Once the HTTP method, the invocation URI, the HTTP body and headers, and the input data are prepared, the actual HTTP message can be constructed.
+
+ The contribution described here is implemented as part of a general invocation engine–OmniVoke, which is exposed as a RESTful API, where the invocation functions are abstracted into resources such as request, response and status, etc., identified by the semantically-described service Unique ID (UID)
+
+ We provide a tool called SWEET [10] that supports the creation of semantic Web API descriptions.
+
+ A middle tier that exposes a unified API to construct Web API calls so different methods of API calls can be abstracted.
+
+
+
+ * [2011] Satisfying Programmers' Information Needs in API-Based Programming
+
+ To cope with these difficulties, they browse the Internet for code samples, tutorials, and API documentation. In general, it is time-consuming to find relevant help from the plethora of information on the web. While programmers can use search-based tools to help locate code snippets or applications that may be relevant to the APIs they are using, they still face the significant challenge of understanding and assessing the quality of the search results.
+
+
+++ API Documentation
+++ Crowd
+
+ * [2012] What makes a good code example?: A study of programming Q&A in StackOverflow
+
+ To help answer this question we have conducted a qualitative analysis of the questions and answers posted to a programming Q&A web site called StackOverflow. Our findings have implications for the way the API documentation and example set should be developed and evolved as well as the design of the tools assisting the development of these materials.
+
+ The interactive nature of SO makes it possible for both questioners and responders to clarify the vagueness in a question/answer. Even other site members can edit questions/answers as they see it fit.
+
+ The flexibility of the site enables a questioner to refine their question as the Q&A session unfolds. It is common for a question to be edited multiple times by the original poster or even by other site members. Our sample of edited questions shows that the wiki-like feature of the site makes it possible to improve the question content based on the feedback from other site members if the question did not originally provide enough information or it was somewhat ambiguous.
+
+ Debug/Corrective, Need- To-Know, How-To-Do-It, Seeking-Different-Solution
+
+ One way to make code concise is to leave unnecessary details out and show their absence with some place-holders (such as comments or ellipses)
+
+ imply that the structure is more important than the implementation details.
+
+ In 5 occasions the answer starts with highlighting a list of things (in contrast to only one element)
+
+ As our findings show, the code itself is not useful enough in many occasions. Therefore, mining knowledge repositories, such as SO and developers' forums, should be considered as an alternative for retrieving more useful examples accompanied with necessary explanation, and perhaps formatted in some ways to facilitate understanding.
+
+ To prepare such documentation, writers need to predict what kind of examples the audience would need and what questions they might have. Since nobody can anticipate each and every question, the documentation should evolve (as the API/language it describes does), not only to cover new features, but also to add examples and explanation for problems that API/language users are facing frequently which are absent from the current version of the documentation. To find out about these problems, the tools mentioned in the previous section can be handy. It is also possible to add a wiki-like capability to the online documentation, so that users' contributions can be added to it, but in a way that is easily distinguished from the official segments.
+
+ Developers of an API/language should provide a comprehensive set of examples for the potential adopters of their product
+
+ http://ieeexplore.ieee.org.ezproxy.lib.ucalgary.ca/xpls/icp.jsp?arnumber=6405249
+
+
+++ API Documentation
+++ Survey
+
+ * [2009]
+ What Makes APIs Hard to Learn? Answers from Developers
+
+  The article focuses on the obstacles to learning an API. Although learnability is only one dimension of usability, there's a clear relationship between the two, in that difficult-to-use APIs are likely to be difficult to learn as well.
+
+   A total of 83 developers answered the survey
+
+   Namely, to mitigate obstacles, API documentation must
+
+■ include good examples,
+■ be complete,
+■ support many complex usage scenarios,
+■ be conveniently organized, and
+■ include relevant design elements.
+
+In studies of developers, examples often emerge as a key learning rcsource. s. In fact, more than one-quarter of all respondents identified the absence of API usage examples tailored to their needs as an obstacle to learning the API.
+
+ For instance, it might be worthwhile to explicitly state the range of usages illustrated by code examples provided in the documentation and point to other resources for additional usages.
+
+
+[2010] CoDocent: Support API Usage with Code Example and API Documentation
+
+For each found code example, CoDocent can automatically link related API documents to provide diagrams as abstractions to reflect the semantics of API calls
+
+
+++ API Documentation
+++ Survey
+
+* [2012] On designing better tools for learning APIs
+
+To understand where further investment would be most useful, we ran a study with 19 professional developers to understand what a solution might look like, free of technical constraints. In this paper, we report on design implications of tools for API learning, grounded in the reality of the professional developers themselves. The reoccurring themes in the participants' feedback were trustworthiness, confidentiality, information overload and the need for code examples as first-class documentation artifacts.
+
+We got very positive feedback on the emphasis on code examples and identifier names in the “Faceted Search” design. Participants prefer results with code examples over results without code examples, which is supported by existing research on API learning barriers
+
+Developers need the het- erogeneous learning materials that web search provides, but want it to be more targeted and organized.
+
+For the participants, credibility is mostly a function of where the information comes from.
+
+When automatically sharing local information with the web, tools must be careful about protecting proprietary information, such as not showing confidential code, nor libraries being used.
+
+
+++ SaaS
+++ API Documentation
+
+* [2010] SaaS support in software documentation systems
+
+The requirement analysis shows that rented documentation systems are the most appropriate for user and technical documentation. There are two major classes of software documentation systems: 1) Wiki, 2) DITA-orientedXML CMS.
+
+
+The advantages of renting a powerful documentation system for small and large project are the following: 1) Maximal functionality at a low affordable cost, 2) Platform independency and high system accessibility, 3) Document quality improvement at the expense of quality controlling tools application, 4) Higher effectiveness of documentation (content re-use, single source usage, automated tools for localization), 5) Organization of robust and scalable documentation process.
+
+However, the system's access security, reliability and information confidentiality issues remain opened and controversial.
+
+
+++ API Documentation
+++ Proxy, Usage -> Reconstruct documentation
+
+* [2007] Constructing Usage Scenarios for API Redocumentation
+
+API usage is often demonstrated by giving example applications and code samples. In this paper we propose an approach for mining such usage scenarios from run-time communication between sample applications and the API. This is done automatically by first monitoring the API usage of sample applications, then filtering the generated traces, and finally synthesizing the sequence diagrams and illustrating them in a well-formed way as UML2 sequence diagrams. Such usage scenarios support the software engineer in comprehending the usage of the API. With proper tool support they can also be used for validating other applications' API usage and for generating code for a new application using the same API.
+The API usages of the applications are summarized as usage scenarios, shown as UML2 sequence diagrams, that illustrate the common, alternative, and optional parts of the usage scenarios.
+
+
+++ Web API
+++ API Specification
+
+* [2012] Welcome to the Real World: A Notation for Modeling REST Services
+
+Documentation of REST and REST-style services often uses prose only, making it hard for client developers to understand the ties between the service's parts. We developed a notation for REST-style services that's based on UML state charts. It can be used with existing tools and is simple enough for use on whiteboards. The notation visualizes relationships between application states, thereby improving the understanding of hypermedia use in services.
+
+First, more than half of the services declared RESTful are method oriented. In most cases, these services don't use HTTP methods properly and aren't well connected. These deficiencies can endanger scalability and ease of use. Making these services resource oriented requires many changes. Therefore, software engineering methods and tools should support the development of resource-oriented services from the beginning of service design, and developers should think in terms of resources. Our notation aims to achieve this.
+
+Our models can visualize the structure of a service's resources and its connections. Transitions in the model represent links between resources or resource states. Resources that are strongly connected can easily be identified by the many links between them.
+
+
+
+++ API Documentation
+++
+
+* [2010] A field study of API learning obstacles
+
+The study involved a combination of surveys and in-person interviews, and collected the opinions and experiences of over 440 professional developers. We found that some of the most severe obstacles faced by developers learning new APIs pertained to the documentation and other learning resources. We report on the obstacles developers face when learning new APIs, with a special focus on obstacles related to API documentation. Our qualitative analysis elicited five important factors to consider when designing API documentation: documentation of intent; code examples; matching APIs with scenarios; penetrability of the API; and format and presentation.
+
+ Nykaza’s et al.’s study identified, among other requirements, the importance of an overview
+section in API documentation.
+
+1 Intent documentation should only be provided on an as-needed basis.
+3 Examples should be developed to demonstrate “best practices” for
+using an API.
+4 Matching scenarios to API elements is an area where documentation
+support is perceived as particularly helpful, and can compensate for hard-tounderstand
+API structure
+Navigating to a documentation page is an implicit query. Boilerplate
+member-level documentation will often not answer the query, and waste developer’s
+time.
+
+++ API Documentation
+++ Scenario Based
+
+* [2003] API documentation with executable examples
+
+The rise of component-based software development has created an urgent need for effective application program interface (API) documentation. Experience has shown that it is hard to create precise and readable documentation. Prose documentation can provide a good overview but lacks precision. Formal methods offer precision but the resulting documentation is expensive to develop. Worse, few developers have the skill or inclination to read formal documentation.
+
+We present a pragmatic solution to the problem of API documentation. We augment the prose documentation with executable test cases, including expected outputs, and use the prose plus the test cases as the documentation. With appropriate tool support, the test cases are easy to develop and read. Such test cases constitute a completely formal, albeit partial, specification of input/output behavior. Equally important, consistency between code and documentation is demonstrated by running the test cases. This approach provides an attractive bridge between formal and informal documentation. We also present a tool that supports compact and readable test cases, and generation of test drivers and documentation, and illustrate the approach with detailed case studies.
+
+
+Typical questions that users might have about the behavior of replace are:
+
+1. What start values are legal?
+2. What end values are legal?
+3. Can the source string be empty?
+4. Can the replacement string be empty?
+
+Not for Web APIs
+
+
+++ Web API
+
+* [2010] Studying the documentation of an API for enterprise service-oriented architecture
+
+Consistent Look-and-Feel:
+Provide an Overall Map:
+Provide a "Bread Crumb Trail"
+Integrate "How-To-Use" Information
+Explain Starting Points:
+Make the Parameters for Services More Prominent:
+Provide Code Examples:
+Online Service Testing:
+New Organizations for Hierarchical Browsing
+
+
+++ API Documentation
+++ Survey
+++ Crowd
+
+* 2013 API documentation and software community values: a survey of open-source API documentation
+
+We reviewed API documentation from 33 of the most popular open-source software projects, assessed their documentation elements, and evaluated the quality of their visual design and writing. We found that the documentation we studied included most or all the documentation elements reported as desirable in earlier studies and in the process, we found that the design and writing quality of many documentation sets received considerable attention. Our findings reinforce the API requirements identified in the literature and suggest that the design and writing quality of the documentation are also critical API documentation requirements that warrant further study.
+
+
+Another researcher described how API documentation was so bad
+that “developers may be getting as much as 50% of their documentation
+from Stack Overflow” (a web site that hosts questions
+and answers about software development) [5].
+
+We assessed API documentation of open-source software libraries
+for the presence of the documentation elements and the page design
+and writing quality. Based on the existing literature, we designed
+the method to test the hypothesis: The documentation of
+open-source software will contain the elements that software developers
+want, as reported in past research.
+
+This supports the notion that the software development
+communities value quality in both design and writing,
+which suggests that craftsmanship is also valued. High-quality
+writing appeared more often than high-quality design—we found
+that 82% of the API documentation studied had high-quality writing
+as compared to the 61% that had high-quality design.
+
+In spite of the diverse character of the API documentation we
+reviewed, high quality writing and attention to detail was more
+common than not. The high percentage of documentation sets we
+171
+found with writing that was clear and detailed indicates quality
+writing is a common value—one that has not been discussed much
+in the literature about API documentation. That there was documentation
+without it, however, indicates that it is a property that
+cannot be assumed. The use of visual design elements in the API
+reference topics was also higher than we expected at the beginning
+of the study, and it, too, is an aspect of API documentation
+that has not received much coverage
+
+++ API Documentation
+++ Crowd
+
+* 2011  Measuring API documentation on the web
+
+*** Very good Related work section
+
+To understand whether documentation via social media can replace or augment more traditional forms of documentation, we study the extent to which the methods of one particular API - jQuery - are documented on the Web. We analyze 1,730 search results and show that software development blogs in particular cover 87.9% of the API methods, mainly featuring tutorials and personal experiences about using the methods. Further, this effort is shared by a large group of developers contributing just a few blog posts. Our findings indicate that social media is more than a niche in software documentation, that it can provide high levels of coverage and that it gives readers a chance to engage with authors.
+
+To examine whether crowd documentation has the potential
+of replacing more traditional forms of documentation,
+in this paper we report on a study aimed at measuring the
+effectiveness and completeness of API documentation via social
+media.
+
+Not all readers were passive, but actively engage in conversation
+with the authors in our data. 81% of the posts
+had at least one comment, with a median of 8 comments
+per post.
+
+
+++ API Documentation
+++ Case study
+
+* 2012 Development and application of a heuristic to assess trends in API documentation
+
+This paper seeks to answer those questions by developing a heuristic to identify whether the documentation set for an application programming interface (API) contains the key elements of API reference documentation that help software developers learn an API. The resulting heuristic was tested on a collection of software documentation that was chosen to provide a diverse set of examples with which to validate the heuristic. In the course of testing the heuristic, interesting patterns in the API documentation were observed. For example, twenty-five percent of the documentation sets studied did not have any overview information, which, according to studies, is one of the most basic elements an API documentation set needs to help software developers learn to use the API.
+
+
+++ API Documentation
+++ Evolution
+
+* 2011 An empirical study on evolution of API documentation
+
+In this paper, we present an analysis methodology to analyze the evolution of API documentation. Based on the methodology, we conduct a quantitative study on API documentation evolution of five widely used real-world libraries. The results reveal various valuable findings, and these findings allow programmers and library developers to better understand API documentation evolution.
+
+5 versions each of Java libraries J2SE, ActiveMQ, lucene, log4j, struct
+
+Annotations, 45.99%
+Rephrasing, 21.26%
+Programming tips. 22.62%
+
+41.99% behavior changed due to exceptions
+29.77% of behavioral differences are about API usage as follows.
+26.71% of behavioral differences are about functionalities as follows
+
+
+++ API Documentation
+++ StackOverflow Integration
+
+* 2014 Live API documentation
+
+While API documentation can help, it is often insufficient on its own. Online sites like Stack Overflow and Github Gists have grown to fill the gap between traditional API documentation and more example-based resources. Unfortunately, these two important classes of documentation are independent.
+
+In this paper we describe an iterative, deductive method of linking source code examples to API documentation. We also present an implementation of this method, called Baker, that is highly precise (0.97) and supports both Java and JavaScript. Baker can be used to enhance traditional API documentation with up-to-date source code examples; it can also be used to incorporate links to the API documentation into the code snippets that use the API.
+
+Unfortunately, there are rarely links between online
+resources and official API documentation: the official documentation
+does not link to the examples that could help
+developers, and the examples rarely link to the documentation.
+
+. Since Stack Overflow posts are ranked,
+and accepted answers are known to have solved a real problem,
+Stack Overflow is a good source of high quality code
+snippets that demonstrate the correct usage of many APIs.
+Increasing the integration between these examples and the
+official API documentation will make documentation maintenance
+easier and increase the visibility and accessibility of
+the official API documentation within source code examples.
+
+form AST and then compares against an oracle
+
+
+++ API Documentation
+++ Crowd
+
+* 2014 Who asked what: integrating crowdsourced FAQs into API documentation
+
+Documentation is important for learning Application Programming Interfaces (APIs). In addition to official documents, much crowdsourced API knowledge is available on the Web. Crowdsourced API documentation is fragmented, scattered around the Web, and disconnected from official documentation. Developers often rely on Web search to retrieve additional programming help. We propose to connect these two types of documentation by capturing developers' Web browsing behavior in the context of document reading and integrating crowdsourced frequently asked questions (FAQs) into API documents. Such an integration not only provides relevant API help more conveniently, but also opens a new approach to promoting knowledge collaboration and studying API users' information needs.
+
+
+To fill these gaps, we propose to integrate crowdsourced
+frequently asked questions (FAQs) into API documents. By
+associating developers’ Web browsing behaviors (“who asked
+what”) with their document-reading context (“who viewed
+what”), we can infer the questions they have and the answers
+they have found and embed them as FAQs into corresponding
+API documents.
+
+
+++ Web API
+++ Extract information from docs
+
+* 2012 Automated information extraction from web APIs documentation
+A fundamental characteristic of Web APIs is the fact that, de facto, providers hardly follow any standard practices while implementing, publishing, and documenting their APIs. As a consequence, the discovery and use of these services by third parties is significantly hampered. In order to achieve further automation while exploiting Web APIs we present an approach for automatically extracting relevant technical information from the Web pages documenting them. In particular we have devised two algorithms that automatically extract technical details such as operation names, operation descriptions or URI templates from the documentation of Web APIs adopting either RPC or RESTful interfaces. The algorithms devised, which exploit advanced DOM processing as well as state of the art Information Extraction and Natural Language Processing techniques, have been evaluated against a detailed dataset exhibiting a high precision and recall---around 90% for both REST and RPC APIs---outperforming state of the art information extraction algorithms.
+
+
+
+* 2013 Patterns of Knowledge in API Reference Documentation
+We report on a study of the nature and organization of knowledge contained in the reference documentation of the hundreds of APIs provided as a part of two major technology platforms: Java SDK 6 and .NET 4.0. Our study involved the development of a taxonomy of knowledge types based on grounded methods and independent empirical validation.
+
+Our results provide a comprehensive perspective on the patterns of knowledge in API documentation: observations about the types of knowledge it contains and how this knowledge is distributed throughout the documentation. The taxonomy and patterns of knowledge we present in this paper can be used to help practitioners evaluate the content of their API documentation, better organize their documentation, and limit the amount of low-value content. They also provide a vocabulary that can help structure and facilitate discussions about the content of APIs.
+
+
+This barplot allows us to distinguish between three classes of knowledge types: Pervasive (Functionality), Common (Structure, Noninformation), and Rare (all others).
+
+

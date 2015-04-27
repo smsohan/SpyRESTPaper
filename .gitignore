@@ -1,0 +1,6 @@
+papers
+*.aux
+*.gz
+*.log
+*fdb_latexmk
+*.bst

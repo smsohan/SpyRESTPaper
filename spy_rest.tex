@@ -325,7 +325,7 @@
 
 % *** PDF, URL AND HYPERLINK PACKAGES ***
 %
-%\usepackage{url}
+\usepackage{url}
 % url.sty was written by Donald Arseneau. It provides better support for
 % handling and breaking URLs. url.sty is already installed on most LaTeX
 % systems. The latest version can be obtained at:
@@ -454,6 +454,36 @@ With SpyREST, we have implemented an innovative solution to largely automate the
 The implication of SpyREST is two-fold. It helps lower the cost of producing and maintaining RESTful API documentation through automation and provides a shared platform for publishing the documentation of different RESTful APIs.
 
 The remainder of this paper is organized as follows: in the next section we provide background information on the topic of RESTful API and API documentation. Then, we discuss the related work in the following section. The implementation details of SpyREST is provided next. Then, we discuss the implications and limitations of our work in the discussion section. We present our core contributions and future work in the conclusion.
+
+
+\section{Related Work} % (fold)
+\label{sec:related_work}
+Several papers have been published on areas related to RESTful API documentation that are discussed under the following two categories: RESTful API documentation and general API learnability.
+
+\subsection{RESTful API Documentation} % (fold)
+\label{sub:restful_api_documentation}
+
+To address the need for a standard format to describe RESTful APIs several related works proposed candidate specifications. For example, Danielsen et al. presented at vocabulary for documenting RESTful Web APIs called Web Interface Language (WIfL) \cite{Danielsen_validation}. The vocabulary comprises of these following objects, Resource, Request, Response, Representation and Parameters that can describe the structure and example usage of RESTful Web APIs. Generation of WIfL specific objects for RESTful APIs requires manual effort or bespoke implementation since a reusable automated approach is not presented. With SpyREST, we focus on automation so that reusable tools can be used to produce RESTful API documentation.
+
+Verborgh et at. presented RESTdesc, a Resource oriented and Hyper-link based specification for describing RESTful APIs \cite{Verborgh_functional}. RESTdesc relies on pre and postconditions to describe the outcome of an API call so that a general purpose API client can parse RESTdesc formatted documentation to invoke API calls to specific RESTful APIs. Mangler et al. presented RDDL, a XML based specification for describing RESTful APIs \cite{Mangler_rddl}. RDDL descriptions are composed of resources, operations, parameters and headers. Manual effort is needed to generate RESTdesc and RDDL formatted documentations.
+
+Kopecky´ et al. presented hRESTS, a machine readable micro-format to describe RESTful APIs that uses an alternate representation compared to WIfL \cite{Kopecky_hrests}. hRESTS specification comprises of Service, Operation, Address, Method, Input, Output and Label objects to describe RESTful APIs. Automated XML transformation is used to convert a formatted HTML documentation of a RESTful API into hRESTS so that the machine readable format can be used by RESTful API clients for automated invocation. SpyREST aims to minimize the cost of a manual or custom process to generate and maintain formatted HTML documentation by leveraging an automated approach.
+
+Maleshkova et al. presented OmniVoke, a RESTful API based invocation engine that provides an abstraction layer for RESTful API calls to multiple APIs that follow different conventions \cite{Maleshkova_omnivoke}. A general purpose RESTful API client can be used against OmniVoke since the different conventions are wrapped under a uniform RESTful API.
+
+Myers et al. performed a user study based on the documentation of Web APIs used in large scale enterprises to understand the desirable contents for Web API documentation \cite{Myers_study}. They recommended providing a consistent look-and-feel with explanation for the starting points and an overall map comprising of both text and diagrams, providing a browsing experience with breadcrumb trail following a hierarchy, an effective search interface, providing example code and a way to exercise the examples online without writing code. SpyREST aims to achieve these desired contents and organization for RESTful APIs using an automated and customizable approach that can be reused across different RESTful APIs.
+
+In addition to the research community, there are several RESTful API specification formats that are observed in the industry. Swagger is a JSON based specification that allows users to describe RESTful APIs in terms of paths, parameters, request and response headers and bodies \footnote{https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md}. RAML is a RESTful API documentation format that uses YAML files to describe RESTful API documentation using a similar hierarchy as Swagger \footnote{http://raml.org/spec.html}. Blueprint is another RESTful API specification format that uses Markdown files with additional tags to describe RESTful API objects \footnote{https://github.com/apiaryio/api-blueprint}. In addition to producing RESTful API documentation, there are tools and software as a service (SaaS) providers that can be used to publish the documentation and auto generate API client code for RESTful APIs that are described using one of these formats. The key limitation of these tools is a manual process that is required to create and maintain the documentations for these formats since there is a lack of automated approaches to do so.
+% subsubsection restful_api_specification (end)
+
+
+
+
+
+% subsection restful_api_documentation (end)
+
+
+% section related_work (end)
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
