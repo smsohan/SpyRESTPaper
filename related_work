@@ -24,10 +24,12 @@ Automated, customizable, live explorable, version aware
 
 
 
+
+
 ++ Web API
 ++ API Specification
 
-* [2013] Validation and Interactivity of Web API Documentation
+DD * [2013] Validation and Interactivity of Web API Documentation
 
 In this paper we present a Web Interface Language (WIfL) vocabulary for API documentation
 
@@ -67,7 +69,7 @@ include REST Chart [21] and RIDDL [22]
 ++ Web API
 ++ API Specifications
 
-* [2011] Lightweight semantics for automating the invocation of Web APIs
+DD * [2011] Lightweight semantics for automating the invocation of Web APIs
 
 We present an approach for employing lightweight semantics for supporting the automated invocation of Web APIs.
 
@@ -96,7 +98,7 @@ We present an approach for employing lightweight semantics for supporting the au
 ++ API Documentation
 ++ Crowd
 
- * [2012] What makes a good code example?: A study of programming Q&A in StackOverflow
+DD * [2012] What makes a good code example?: A study of programming Q&A in StackOverflow
 
  To help answer this question we have conducted a qualitative analysis of the questions and answers posted to a programming Q&A web site called StackOverflow. Our findings have implications for the way the API documentation and example set should be developed and evolved as well as the design of the tools assisting the development of these materials.
 
@@ -125,7 +127,7 @@ We present an approach for employing lightweight semantics for supporting the au
 ++ Survey
 
  * [2009]
- What Makes APIs Hard to Learn? Answers from Developers
+ DD What Makes APIs Hard to Learn? Answers from Developers
 
   The article focuses on the obstacles to learning an API. Although learnability is only one dimension of usability, there's a clear relationship between the two, in that difficult-to-use APIs are likely to be difficult to learn as well.
 
@@ -152,7 +154,7 @@ For each found code example, CoDocent can automatically link related API documen
 ++ API Documentation
 ++ Survey
 
-* [2012] On designing better tools for learning APIs
+DD * [2012] On designing better tools for learning APIs
 
 To understand where further investment would be most useful, we ran a study with 19 professional developers to understand what a solution might look like, free of technical constraints. In this paper, we report on design implications of tools for API learning, grounded in the reality of the professional developers themselves. The reoccurring themes in the participants' feedback were trustworthiness, confidentiality, information overload and the need for code examples as first-class documentation artifacts.
 
@@ -168,7 +170,7 @@ When automatically sharing local information with the web, tools must be careful
 ++ SaaS
 ++ API Documentation
 
-* [2010] SaaS support in software documentation systems
+DD * [2010] SaaS support in software documentation systems
 
 The requirement analysis shows that rented documentation systems are the most appropriate for user and technical documentation. There are two major classes of software documentation systems: 1) Wiki, 2) DITA-orientedXML CMS.
 
@@ -223,7 +225,7 @@ time.
 ++ API Documentation
 ++ Scenario Based
 
-* [2003] API documentation with executable examples
+DD * [2003] API documentation with executable examples
 
 The rise of component-based software development has created an urgent need for effective application program interface (API) documentation. Experience has shown that it is hard to create precise and readable documentation. Prose documentation can provide a good overview but lacks precision. Formal methods offer precision but the resulting documentation is expensive to develop. Worse, few developers have the skill or inclination to read formal documentation.
 
@@ -242,7 +244,7 @@ Not for Web APIs
 
 ++ Web API
 
-* [2010] Studying the documentation of an API for enterprise service-oriented architecture
+DD * [2010] Studying the documentation of an API for enterprise service-oriented architecture
 
 Consistent Look-and-Feel:
 Provide an Overall Map:
@@ -372,7 +374,7 @@ form AST and then compares against an oracle
 ++ API Documentation
 ++ Crowd
 
-* 2014 Who asked what: integrating crowdsourced FAQs into API documentation
+DD * 2014 Who asked what: integrating crowdsourced FAQs into API documentation
 
 Documentation is important for learning Application Programming Interfaces (APIs). In addition to official documents, much crowdsourced API knowledge is available on the Web. Crowdsourced API documentation is fragmented, scattered around the Web, and disconnected from official documentation. Developers often rely on Web search to retrieve additional programming help. We propose to connect these two types of documentation by capturing developers' Web browsing behavior in the context of document reading and integrating crowdsourced frequently asked questions (FAQs) into API documents. Such an integration not only provides relevant API help more conveniently, but also opens a new approach to promoting knowledge collaboration and studying API users' information needs.
 
