@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 APR 2015 00:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 APR 2015 08:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -197,6 +197,44 @@ LaTeX Warning: Citation `Maleshkova_omnivoke' on page 3 undefined on input line
 LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 484.
 
 
+LaTeX Warning: Citation `Robillard_what_makes' on page 3 undefined on input lin
+e 500.
+
+
+LaTeX Warning: Citation `Kuhn_on_designing' on page 3 undefined on input line 5
+00.
+
+
+LaTeX Warning: Citation `Hoffman_api_documentation' on page 3 undefined on inpu
+t line 500.
+
+
+LaTeX Warning: Citation `Nasehi_what_makes' on page 3 undefined on input line 5
+00.
+
+
+LaTeX Warning: Citation `Hoffman_api_documentation' on page 3 undefined on inpu
+t line 501.
+
+
+LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 501.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 502--502
+[][][]$\OT1/ptm/m/n/8 https : / / groups . google . com / a / lists . stripe . 
+com / forum / # ! searchin / api-[]discuss /
+ []
+
+
+LaTeX Warning: Citation `Robillard_what_makes' on page 3 undefined on input lin
+e 511.
+
+
+LaTeX Warning: Citation `Stepalina_saas' on page 3 undefined on input line 512.
+
+
+[3]
+
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
 
@@ -207,29 +245,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (./spy_rest.aux)
+[4
+
+] (./spy_rest.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1012 strings out of 493488
- 17189 string characters out of 3141326
+ 1013 strings out of 493488
+ 17195 string characters out of 3141326
  74076 words of memory out of 3000000
  4377 multiletter control sequences out of 15000+200000
- 41420 words of font info for 75 fonts, out of 3000000 for 9000
+ 42498 words of font info for 76 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 26i,8n,19p,1718b,208s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 26i,8n,19p,1718b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012
 /texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (3 pages, 77403 bytes).
+Output written on spy_rest.pdf (4 pages, 79878 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 38 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

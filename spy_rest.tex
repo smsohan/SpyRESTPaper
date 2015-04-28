@@ -495,15 +495,21 @@ In addition to the research community, there are several RESTful API specificati
 
 The following list of requirements for SpyREST is derived from analyzing the aforementioned related work and current API documentation practices as observed in the industry:
 
-TBD: add reference to related work or comments from users on the web
-
 \begin{itemize}
-  \item Automated RESTful API documentation
-  \item Example based
-  \item Executable documentation
-  \item Version awareness
-  \item Customizable
-  \item Reusable
+  \item Automated RESTful API documentation: RESTful APIs are either documented manually or using custom tools to partially automate the process. Both processes can be expensive to maintain since API documentation is a continuous process to support the evolution of APIs. The primary requirement for SpyREST is to find a pragmatic approach to automatically generate RESTful API documentation.
+  \item Example based: As discussed in the related work section, several authors have emphasized on including example scenarios with API documentation to help users understand how to use an API \cite{Robillard_what_makes} \cite{Kuhn_on_designing} \cite{Hoffman_api_documentation} \cite{Nasehi_what_makes}. SpyREST generated API documentation needs to include example scenarios.
+  \item Executable documentation: In addition to including examples, SpyREST also needs to allow users to execute the example scenarios so that they can try the API features without having to write code as recommended in related work \cite{Hoffman_api_documentation} \cite{Myers_study}.
+  \item Version awareness: SpyREST needs to allow API developers to publish documentation for multiple versions of a Web API as it evolves. The following comment from a API user of Stripe shows the importance of a version-aware documentation tool \footnote{\url{https://groups.google.com/a/lists.stripe.com/forum/#!searchin/api-discuss/version/api-discuss/li4PyVcweiw/NT9SFTtF-vQJ}}
+:
+  \small
+  \begin{quotation}
+   ``Does the full API documentation only reflect the current version of the
+    API?  Is there a way to access the API docs for outdated versions? ...That would be very helpful. When you are trying to upgrade from one version to another it's impossible to know the implementation differences. We are currently about 4 API versions behind and are stuck behind a version that causes a significant amount of work on our end to support. I'd like to be able to upgrade incrementally through each version.''
+  \end{quotation}
+  \normalsize
+
+  \item Customizable: SpyREST needs to allow users to edit overview information in addition to the auto generated content as recommended by \cite{Robillard_what_makes}.
+  \item Reusable: SpyREST needs to work as a reusable and shared platform so that multiple REST API documentations can be generated and published on a single platform to get the benefits as outlined by Stepalina \cite{Stepalina_saas}.
   \item Collaborative
 \end{itemize}
 
