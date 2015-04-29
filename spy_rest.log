@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2015 01:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2015 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -167,38 +167,74 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@indent=\dimen126
+\caption@parindent=\dimen127
+\caption@hangindent=\dimen128
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize {\centering \normalfont \footnotesize #1.\qquad \scshap
+e #2\par }\@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox 
+\@tempboxa \hbox {\normalfont \footnotesize {#1.}~~ #2}\ifdim \wd \@tempboxa >\
+hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}~~ }\parbox [t]{
+\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLA
+SSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \h
+fil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi
+ \fi \fi .
+\c@ContinuedFloat=\count100
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count101
+\c@subtable=\count102
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 ) (./spy_rest.aux)
 \openout1 = `spy_rest.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 350.
-LaTeX Font Info:    ... okay on input line 350.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 350.
-LaTeX Font Info:    ... okay on input line 350.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 350.
-LaTeX Font Info:    ... okay on input line 350.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 350.
-LaTeX Font Info:    ... okay on input line 350.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 350.
-LaTeX Font Info:    ... okay on input line 350.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 350.
-LaTeX Font Info:    ... okay on input line 350.
-\c@lstlisting=\count100
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 352.
+LaTeX Font Info:    ... okay on input line 352.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 352.
+LaTeX Font Info:    ... okay on input line 352.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 352.
+LaTeX Font Info:    ... okay on input line 352.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 352.
+LaTeX Font Info:    ... okay on input line 352.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 352.
+LaTeX Font Info:    ... okay on input line 352.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 352.
+LaTeX Font Info:    ... okay on input line 352.
+\c@lstlisting=\count103
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen123
+\scratchcounter=\count104
+\scratchdimen=\dimen129
 \scratchbox=\box29
-\nofMPsegments=\count102
-\nofMParguments=\count103
+\nofMPsegments=\count105
+\nofMParguments=\count106
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen124
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen130
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks18
 ) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -248,6 +284,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 Underfull \vbox (badness 4699) has occurred while \output is active []
 
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -256,122 +295,122 @@ Underfull \vbox (badness 4699) has occurred while \output is active []
 ]
 
 LaTeX Warning: Citation `Robillard_what_makes' on page 2 undefined on input lin
-e 464.
+e 466.
 
 
 LaTeX Warning: Citation `Robillard_a_field_study' on page 2 undefined on input 
-line 464.
+line 466.
 
 
 LaTeX Warning: Citation `Kuhn_on_designing' on page 2 undefined on input line 4
-64.
-
-
-LaTeX Warning: Citation `Hoffman_api_documentation' on page 2 undefined on inpu
-t line 464.
-
-
-LaTeX Warning: Citation `Nasehi_what_makes' on page 2 undefined on input line 4
 66.
 
 
+LaTeX Warning: Citation `Hoffman_api_documentation' on page 2 undefined on inpu
+t line 466.
+
+
+LaTeX Warning: Citation `Nasehi_what_makes' on page 2 undefined on input line 4
+68.
+
+
 LaTeX Warning: Citation `Parnin_measuring' on page 2 undefined on input line 46
-6.
+8.
 
 
-LaTeX Warning: Citation `Chen_who_asked' on page 2 undefined on input line 466.
+LaTeX Warning: Citation `Chen_who_asked' on page 2 undefined on input line 468.
 
 
 
 LaTeX Warning: Citation `Subramanian_live' on page 2 undefined on input line 46
-6.
+8.
 
 
-LaTeX Warning: Citation `Stepalina_saas' on page 2 undefined on input line 468.
+LaTeX Warning: Citation `Stepalina_saas' on page 2 undefined on input line 470.
 
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 470.
+(Font)              <7> on input line 472.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 470.
+(Font)              <5> on input line 472.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 470.
+(Font)              <8> on input line 472.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 470.
+(Font)              <6> on input line 472.
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--470
+Underfull \hbox (badness 10000) in paragraph at lines 472--472
 [][][]\OT1/ptm/m/n/8 http://www.oracle.com/technetwork/java/javase/documentatio
 n/index-jsp-
  []
 
 
-LaTeX Warning: Citation `Jadeite' on page 2 undefined on input line 470.
+LaTeX Warning: Citation `Jadeite' on page 2 undefined on input line 472.
 
 
 LaTeX Warning: Citation `Danielsen_validation' on page 2 undefined on input lin
-e 475.
+e 477.
 
 
 LaTeX Warning: Citation `Verborgh_functional' on page 2 undefined on input line
- 477.
+ 479.
 
 
-LaTeX Warning: Citation `Mangler_rddl' on page 2 undefined on input line 477.
+LaTeX Warning: Citation `Mangler_rddl' on page 2 undefined on input line 479.
 
 [2]
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no ´ in font ptmr7t!
 
 
-LaTeX Warning: Citation `Kopecky_hrests' on page 3 undefined on input line 479.
+LaTeX Warning: Citation `Kopecky_hrests' on page 3 undefined on input line 481.
 
 
 
 LaTeX Warning: Citation `Maleshkova_omnivoke' on page 3 undefined on input line
- 481.
+ 483.
 
 
-LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 483.
+LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 485.
 
 
 LaTeX Warning: Citation `Robillard_what_makes' on page 3 undefined on input lin
-e 501.
+e 503.
 
 
 LaTeX Warning: Citation `Kuhn_on_designing' on page 3 undefined on input line 5
-01.
-
-
-LaTeX Warning: Citation `Hoffman_api_documentation' on page 3 undefined on inpu
-t line 501.
-
-
-LaTeX Warning: Citation `Nasehi_what_makes' on page 3 undefined on input line 5
-01.
+03.
 
 
 LaTeX Warning: Citation `Hoffman_api_documentation' on page 3 undefined on inpu
 t line 503.
 
 
-LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 503.
+LaTeX Warning: Citation `Nasehi_what_makes' on page 3 undefined on input line 5
+03.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--505
+LaTeX Warning: Citation `Hoffman_api_documentation' on page 3 undefined on inpu
+t line 505.
+
+
+LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 505.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
 [][][]$\OT1/ptm/m/n/8 https : / / groups . google . com / a / lists . stripe . 
 com / forum / # ! searchin / api-[]discuss /
  []
 
 
 LaTeX Warning: Citation `Robillard_what_makes' on page 3 undefined on input lin
-e 514.
+e 516.
 
 
-LaTeX Warning: Citation `Stepalina_saas' on page 3 undefined on input line 516.
+LaTeX Warning: Citation `Stepalina_saas' on page 3 undefined on input line 518.
 
 
 
-LaTeX Warning: Citation `Chen_who_asked' on page 3 undefined on input line 518.
+LaTeX Warning: Citation `Chen_who_asked' on page 3 undefined on input line 520.
 
 
 (./components.pdf_tex <components.pdf, id=13, 550.02988pt x 116.03413pt>
@@ -381,25 +420,53 @@ File: components.pdf Graphic file (type pdf)
 Package pdftex.def Info: components.pdf used on input line 52.
 (pdftex.def)             Requested size: 253.04987pt x 53.3834pt.
 ) [3]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 551.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 553.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 551.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 553.
 
-Underfull \hbox (badness 2818) in paragraph at lines 560--575
+Underfull \hbox (badness 2818) in paragraph at lines 562--577
 \OT1/ptm/m/n/10 Spy au-to-mat-i-cally saves the raw re-quest and re-sponse
  []
 
 
-Overfull \hbox (13.59827pt too wide) in paragraph at lines 560--575
+Overfull \hbox (13.59827pt too wide) in paragraph at lines 562--577
 [] 
  []
 
-[4 <./components.pdf>]
+<spyrest_header.png, id=17, 429.605pt x 670.505pt>
+File: spyrest_header.png Graphic file (type png)
+ <use spyrest_header.png>
+Package pdftex.def Info: spyrest_header.png used on input line 597.
+(pdftex.def)             Requested size: 209.63669pt x 327.18959pt.
+
+<spyrest_examples.png, id=19, 600.2425pt x 745.78625pt>
+File: spyrest_examples.png Graphic file (type png)
+
+<use spyrest_examples.png>
+Package pdftex.def Info: spyrest_examples.png used on input line 601.
+(pdftex.def)             Requested size: 262.04987pt x 325.5979pt.
+ [4 <./components.pdf>]
+Underfull \hbox (badness 5970) in paragraph at lines 618--619
+[]\OT1/ptm/m/n/10 Fig 2[] shows screen shots (con-tent and pre-sen-ta-
+ []
+
+
+Underfull \hbox (badness 5345) in paragraph at lines 618--619
+\OT1/ptm/m/n/10 gen-er-ated doc-u-men-ta-tion solely based on an ex-am-ple
+ []
+
+[5 <./spyrest_header.png> <./spyrest_examples.png>]
+<curl.png, id=31, 601.24625pt x 216.81pt>
+File: curl.png Graphic file (type png)
+ <use curl.png>
+Package pdftex.def Info: curl.png used on input line 630.
+(pdftex.def)             Requested size: 253.04987pt x 91.25145pt.
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -411,31 +478,29 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
-
-] (./spy_rest.aux)
+[6 <./curl.png>] (./spy_rest.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3531 strings out of 493488
- 54877 string characters out of 3141326
- 123990 words of memory out of 3000000
- 6809 multiletter control sequences out of 15000+200000
+ 4611 strings out of 493488
+ 74343 string characters out of 3141326
+ 145123 words of memory out of 3000000
+ 7876 multiletter control sequences out of 15000+200000
  42498 words of font info for 76 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,8n,32p,1722b,1162s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,8n,40p,1722b,1162s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (5 pages, 88822 bytes).
+Output written on spy_rest.pdf (6 pages, 193433 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

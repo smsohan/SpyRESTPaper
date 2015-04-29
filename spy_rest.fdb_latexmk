@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1430292903 "spy_rest.tex" "spy_rest.pdf" "spy_rest" 1430292904
+["pdflatex"] 1430334583 "spy_rest.tex" "spy_rest.pdf" "spy_rest" 1430334584
   "/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -9,6 +9,9 @@
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty" 1335995445 14040 8de9f47fabc4ca3bd69b6d795e32751c ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty" 1335995445 18425 775b341047ce304520cc7c11ca41392e ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty" 1335995445 19987 01cb2f3c1d21e5f05711b7fd50b17f2a ""
+  "/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption.sty" 1331852109 64617 3e595e89cb20089970940faf5347edb4 ""
+  "/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption3.sty" 1331852109 59928 5bdbc848cc19ace34fb8f06975f2d198 ""
+  "/usr/local/texlive/2012/texmf-dist/tex/latex/caption/subcaption.sty" 1331852109 4225 ba79cf1a7e9cbc04e4b417232de4aab9 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty" 1156702488 6406 6f55214ce374a5b186b8781f4796f1f9 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty" 1254151804 14183 42a8fc761b806986eef292369afc2988 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty" 1156702488 7882 3bd78469d444e8d494e27cfd7ca92719 ""
@@ -30,9 +33,12 @@
   "IEEEtran.cls" 1354044732 207390 d653df0f34cc52792528fb4a3b56093b ""
   "components.pdf" 1430285512 1083 decf0eddabac5eff28636c78e809f798 ""
   "components.pdf_tex" 1430285512 2138 393f0dc0c888d06c32c9501bed2508b6 ""
-  "spy_rest.aux" 1430292904 3175 683830c286ec9f46e8bc50d70e76eaef ""
-  "spy_rest.tex" 1430292903 48451 b196cab40820b17dfaa470eac526b4f8 ""
+  "curl.png" 1430333599 49531 4e64363bc10e348502d79e33048abe01 ""
+  "spy_rest.aux" 1430334584 3113 5e13a3fe47b8411d8e543efcae70e45e ""
+  "spy_rest.tex" 1430334583 53883 79c24c8576291724366b53560f094ebb ""
+  "spyrest_examples.png" 1430324997 91140 9aaf9c2757d8aacd54ab5b0e66cf45e2 ""
+  "spyrest_header.png" 1430324191 66634 3061e659708bd75e68a0c4afcb166699 ""
   (generated)
   "spy_rest.aux"
-  "spy_rest.pdf"
   "spy_rest.log"
+  "spy_rest.pdf"
