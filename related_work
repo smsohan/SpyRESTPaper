@@ -205,7 +205,7 @@ Our models can visualize the structure of a service's resources and its connecti
 ++ API Documentation
 ++
 
-* [2010] A field study of API learning obstacles
+DD * [2010] A field study of API learning obstacles
 
 The study involved a combination of surveys and in-person interviews, and collected the opinions and experiences of over 440 professional developers. We found that some of the most severe obstacles faced by developers learning new APIs pertained to the documentation and other learning resources. We report on the obstacles developers face when learning new APIs, with a special focus on obstacles related to API documentation. Our qualitative analysis elicited five important factors to consider when designing API documentation: documentation of intent; code examples; matching APIs with scenarios; penetrability of the API; and format and presentation.
 
@@ -301,7 +301,7 @@ that has not received much coverage
 ++ API Documentation
 ++ Crowd
 
-* 2011  Measuring API documentation on the web
+DD * 2011  Measuring API documentation on the web
 
 *** Very good Related work section
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 APR 2015 08:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 APR 2015 22:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -108,109 +108,119 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 ) (./spy_rest.aux)
 \openout1 = `spy_rest.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 351.
-LaTeX Font Info:    ... okay on input line 351.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 351.
-LaTeX Font Info:    ... okay on input line 351.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 351.
-LaTeX Font Info:    ... okay on input line 351.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 351.
-LaTeX Font Info:    ... okay on input line 351.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 351.
-LaTeX Font Info:    ... okay on input line 351.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 351.
-LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
 
-[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+Underfull \vbox (badness 4699) has occurred while \output is active []
+
+ [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 
 LaTeX Warning: Citation `Robillard_what_makes' on page 2 undefined on input lin
-e 465.
+e 462.
 
 
 LaTeX Warning: Citation `Robillard_a_field_study' on page 2 undefined on input 
-line 465.
+line 462.
 
 
 LaTeX Warning: Citation `Kuhn_on_designing' on page 2 undefined on input line 4
-65.
+62.
 
 
 LaTeX Warning: Citation `Hoffman_api_documentation' on page 2 undefined on inpu
-t line 465.
+t line 462.
 
 
 LaTeX Warning: Citation `Nasehi_what_makes' on page 2 undefined on input line 4
-67.
+64.
 
 
-LaTeX Warning: Citation `Chen_who_asked' on page 2 undefined on input line 467.
+LaTeX Warning: Citation `Parnin_measuring' on page 2 undefined on input line 46
+4.
+
+
+LaTeX Warning: Citation `Chen_who_asked' on page 2 undefined on input line 464.
 
 
 
 LaTeX Warning: Citation `Subramanian_live' on page 2 undefined on input line 46
-7.
+4.
 
 
-LaTeX Warning: Citation `Stepalina_saas' on page 2 undefined on input line 469.
+LaTeX Warning: Citation `Stepalina_saas' on page 2 undefined on input line 466.
 
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 471.
+(Font)              <7> on input line 468.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 471.
+(Font)              <5> on input line 468.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 471.
+(Font)              <8> on input line 468.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 471.
+(Font)              <6> on input line 468.
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--471
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
 [][][]\OT1/ptm/m/n/8 http://www.oracle.com/technetwork/java/javase/documentatio
 n/index-jsp-
  []
 
 
+LaTeX Warning: Citation `Jadeite' on page 2 undefined on input line 468.
+
+
 LaTeX Warning: Citation `Danielsen_validation' on page 2 undefined on input lin
-e 476.
+e 473.
 
 
 LaTeX Warning: Citation `Verborgh_functional' on page 2 undefined on input line
- 478.
+ 475.
 
 
-LaTeX Warning: Citation `Mangler_rddl' on page 2 undefined on input line 478.
+LaTeX Warning: Citation `Mangler_rddl' on page 2 undefined on input line 475.
 
+[2]
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no ´ in font ptmr7t!
 
-LaTeX Warning: Citation `Kopecky_hrests' on page 2 undefined on input line 480.
+
+LaTeX Warning: Citation `Kopecky_hrests' on page 3 undefined on input line 477.
 
 
-[2]
 
 LaTeX Warning: Citation `Maleshkova_omnivoke' on page 3 undefined on input line
- 482.
+ 479.
 
 
-LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 484.
+LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 481.
 
 
 LaTeX Warning: Citation `Robillard_what_makes' on page 3 undefined on input lin
-e 500.
+e 499.
 
 
-LaTeX Warning: Citation `Kuhn_on_designing' on page 3 undefined on input line 5
-00.
+LaTeX Warning: Citation `Kuhn_on_designing' on page 3 undefined on input line 4
+99.
 
 
 LaTeX Warning: Citation `Hoffman_api_documentation' on page 3 undefined on inpu
-t line 500.
+t line 499.
 
 
-LaTeX Warning: Citation `Nasehi_what_makes' on page 3 undefined on input line 5
-00.
+LaTeX Warning: Citation `Nasehi_what_makes' on page 3 undefined on input line 4
+99.
 
 
 LaTeX Warning: Citation `Hoffman_api_documentation' on page 3 undefined on inpu
@@ -220,17 +230,21 @@ t line 501.
 LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 501.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--502
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 [][][]$\OT1/ptm/m/n/8 https : / / groups . google . com / a / lists . stripe . 
 com / forum / # ! searchin / api-[]discuss /
  []
 
 
 LaTeX Warning: Citation `Robillard_what_makes' on page 3 undefined on input lin
-e 511.
+e 512.
 
 
-LaTeX Warning: Citation `Stepalina_saas' on page 3 undefined on input line 512.
+LaTeX Warning: Citation `Stepalina_saas' on page 3 undefined on input line 514.
+
+
+
+LaTeX Warning: Citation `Chen_who_asked' on page 3 undefined on input line 516.
 
 
 [3]
@@ -253,23 +267,22 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1013 strings out of 493488
- 17195 string characters out of 3141326
+ 1015 strings out of 493488
+ 17222 string characters out of 3141326
  74076 words of memory out of 3000000
- 4377 multiletter control sequences out of 15000+200000
+ 4379 multiletter control sequences out of 15000+200000
  42498 words of font info for 76 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 26i,8n,19p,1718b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 26i,8n,19p,1722b,224s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (4 pages, 79878 bytes).
+exlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-d
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on spy_rest.pdf (4 pages, 75286 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 34 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

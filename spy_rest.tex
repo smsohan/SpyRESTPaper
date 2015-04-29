@@ -98,9 +98,6 @@
 
 
 
-
-
-
 % *** CITATION PACKAGES ***
 %
 %\usepackage{cite}
@@ -453,7 +450,7 @@ With SpyREST, we have implemented an innovative solution to largely automate the
 
 The implication of SpyREST is two-fold. It helps lower the cost of producing and maintaining RESTful API documentation through automation and provides a shared platform for publishing the documentation of different RESTful APIs.
 
-The remainder of this paper is organized as follows: in the next section we provide background information on the topic of RESTful API and API documentation. Then, we discuss the related work in the following section. The implementation details of SpyREST is provided next. Then, we discuss the implications and limitations of our work in the discussion section. We present our core contributions and future work in the conclusion.
+The remainder of this paper is organized as follows: in the next section we discuss the related work on API documentation. The implementation details of SpyREST is provided next. Then, we present a case study to demonstrate SpyREST in action. Then, we discuss the implications and limitations of our work in the discussion section. We present our core contributions and future work in the conclusion.
 
 
 \section{Related Work} % (fold)
@@ -464,11 +461,11 @@ Several papers have been published on areas related to RESTful API documentation
 \label{ssub:api_learnability}
 Several papers have studied the documentation of APIs to understand and recommend best practices that are also applicable to RESTful API documentation. Robillard et al. discussed the obstacles that make APIs hard to learn by surveying API developers and users \cite{Robillard_what_makes} \cite{Robillard_a_field_study}. They found that  developers faced severe obstacles learning new APIs due to inappropriate documentation and other learning resources. Robillard's recommendations for good API documentations include the following: include good examples, be complete, support many complex usage scenarios, be conveniently organized, and include relevant design elements. Kuhn et al. discussed the importance of good examples in API documentation as a key recommendation based on a survey of software developers using APIs \cite{Kuhn_on_designing}. In addition to examples, they identified trustworthiness, confidentiality, and limiting information overload as other key recommendations for API documentation. When API documentation is published for external use, Kuhn identified the need for the documentation tools to be able to protect proprietary and confidential information. Hoffman et al. recommended making the API example scenarios to be executable test cases so that a user can execute an API and understand the related business rules \cite{Hoffman_api_documentation}. We recognize all these recommendations to be equally important for RESTful APIs. SpyREST automatically generates RESTful API documents from example API calls, with information about the publisher and allows the users to execute the examples following the aforementioned recommendations.
 
-Nasehi et al. performed a case study based on StackOverflow discussions to find out what makes good code examples \cite{Nasehi_what_makes}. They recommended API developers to include a comprehensive set of code examples in the API documentation and the use of wiki-like collaborative tools with online API documentation so that users can ask questions and get answers on officially published API documentation. Chen et al. recommended integrating crowdsourced frequently asked questions (FAQs) into API documents so that users can easily find relevant discussions when questions arise as they are browsing API documentation \cite{Chen_who_asked}. They presented a tool that can embed FAQs into API documents based on a user's browsing behavior. Subramanian et al. presented an automated approach to link API documentation of different Java and JavaScript libraries with code examples that are shared on StackOverflow by the API users so that the collaborative crowd documentation of APIs can be linked with official documentations \cite{Subramanian_live}. To link API documentation with crowdsourced content, the collaborative features of SpyREST allows users to discuss API related questions and answers on the same web pages where the auto generated RESTful API documentations are shown.
+Nasehi et al. performed a case study based on StackOverflow discussions to find out what makes good code examples \cite{Nasehi_what_makes}. They recommended API developers to include a comprehensive set of code examples in the API documentation and the use of wiki-like collaborative tools with online API documentation so that users can ask questions and get answers on officially published API documentation. Parnin et al. found that social media holds a key place in software documentation as  it provides additional knowledge about APIs and gives readers a chance to engage with authors of the APIs \cite{Parnin_measuring}. They found active collaboration about API related questions resulting into 81\% of posts receiving at least one comment with a median of 8 comments per question. Chen et al. recommended integrating crowdsourced frequently asked questions (FAQs) into API documents so that users can easily find relevant discussions when questions arise as they are browsing API documentation \cite{Chen_who_asked}. They presented a tool that can embed FAQs into API documents based on a user's browsing behavior. Subramanian et al. presented an automated approach to link API documentation of different Java and JavaScript libraries with code examples that are shared on StackOverflow by the API users so that the collaborative crowd documentation of APIs can be linked with official documentations \cite{Subramanian_live}. To link API documentation with valuable crowdsourced content, the collaborative features of SpyREST allows users to discuss API related questions and answers on the same web pages where the auto generated RESTful API documentations are shown.
 
 Stepalina discussed the advantages of SaaS based solutions for API documentation systems where a web platform can be used to publish many different API documentations \cite{Stepalina_saas}. They identified several benefits of such a reusable platform, such as, cost effective yet powerful, platform agnostic and high accessibility, improved document quality, content re-use, automated tools and organization of robust and scalable documentation process. SpyREST is a SaaS based tool that can be used to leverage these benefits as it allows the generation and publishing of RESTful API documentations for many different APIs under a single platform. They also identified security and reliability of such a shared platform as potentially open issues. To overcome these issues, SpyREST allows a self hosted alternative to SaaS model where API developers can get full isolation for their RESTful API documentation.
 
-Several tools exist that help automatic generation of API documentation for local APIs such as JavaDoc \footnote{http://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html}, RDoc \footnote{http://rdoc.sourceforge.net/} etc. that convert formatted comments from source code into corresponding HTML documentation for the classes and methods. There is a limited applicability of these tools for documenting RESTful APIs because HTTP specific information such as request and response headers, url, request and response payloads are not natively supported by these tools. There exists a gap for tool support to automatically generate RESTful API documentation. SpyREST fills this gap as it automatically generates RESTful API documentation by recording and synthesizing example API calls.
+Several tools exist that help automatic generation of API documentation for local APIs such as JavaDoc \footnote{http://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html}, RDoc \footnote{http://rdoc.sourceforge.net/} etc. that convert formatted comments from source code into corresponding HTML documentation for the classes and methods. Jadeite is a tool that adds placeholder API objects for library APIs to improve the search and discovery of desired API objects \cite{Jadeite}. While these tools have been proven to work for local library APIs, they have a limited applicability for documenting RESTful APIs because HTTP specific information such as request and response headers, url, request and response payloads are not natively supported by these tools. Hence, there exists a gap for tool support to automatically generate RESTful API documentation. SpyREST fills this gap as it automatically generates RESTful API documentation by recording and synthesizing example API calls.
 
 \subsection{RESTful API Documentation} % (fold)
 \label{sub:restful_api_documentation}
@@ -483,7 +480,7 @@ Maleshkova et al. presented OmniVoke, a RESTful API based invocation engine that
 
 Myers et al. performed a user study based on the documentation of Web APIs used in large scale enterprises to understand the desirable contents for Web API documentation \cite{Myers_study}. They recommended providing a consistent look-and-feel with explanation for the starting points and an overall map comprising of both text and diagrams, providing a browsing experience with breadcrumb trail following a hierarchy, an effective search interface, providing example code and a way to exercise the examples online without writing code. SpyREST aims to achieve requirements for RESTful API documentation using an automated yet customizable approach that can be reused across different RESTful APIs.
 
-In addition to the research community, there are several RESTful API specification formats that are observed in the industry. Swagger is a JSON based specification that allows users to describe RESTful APIs in terms of paths, parameters, request and response headers and bodies \footnote{https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md}. RAML is a RESTful API documentation format that uses YAML files to describe RESTful API documentation using a similar hierarchy as Swagger \footnote{http://raml.org/spec.html}. Blueprint is another RESTful API specification format that uses Markdown files with additional tags to describe RESTful API objects \footnote{https://github.com/apiaryio/api-blueprint}. In addition to producing RESTful API documentation, there are tools and software as a service (SaaS) providers that can be used to publish the documentation and auto generate API client code for RESTful APIs that are described using one of these formats. The key limitation of these tools is a manual process that is required to create and maintain the documentations for these formats since there is a lack of automated approaches to do so.
+In addition to the research community, there are several RESTful API specification formats that are observed in the industry. Swagger is a JSON based specification that allows users to describe RESTful APIs in terms of paths, parameters, request and response headers and bodies \footnote{https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md}. RAML is a RESTful API documentation format that uses YAML files to describe RESTful API documentation using a similar hierarchy as Swagger \footnote{http://raml.org/spec.html}. Blueprint is another RESTful API specification format that uses Markdown files with additional tags to describe RESTful API objects \footnote{https://github.com/apiaryio/api-blueprint}. In addition to producing RESTful API documentation, there are tools and software as a service (SaaS) providers that can be used to publish the documentation and auto generate API client code for RESTful APIs that are described using one of these formats. To use these tools to generate HTML based RESTful API documentation, API developers need to manually construct the intermediate documentation format that is required by these platforms since there is no automated tool to produce this. In contrast, SpyREST generates RESTful API documentation by synthesizing data collected from example API calls without relying on any intermediate representation.
 % subsubsection restful_api_specification (end)
 
 
@@ -495,11 +492,15 @@ In addition to the research community, there are several RESTful API specificati
 
 The following list of requirements for SpyREST is derived from analyzing the aforementioned related work and current API documentation practices as observed in the industry:
 
-\begin{itemize}
-  \item Automated RESTful API documentation: RESTful APIs are either documented manually or using custom tools to partially automate the process. Both processes can be expensive to maintain since API documentation is a continuous process to support the evolution of APIs. The primary requirement for SpyREST is to find a pragmatic approach to automatically generate RESTful API documentation.
-  \item Example based: As discussed in the related work section, several authors have emphasized on including example scenarios with API documentation to help users understand how to use an API \cite{Robillard_what_makes} \cite{Kuhn_on_designing} \cite{Hoffman_api_documentation} \cite{Nasehi_what_makes}. SpyREST generated API documentation needs to include example scenarios.
-  \item Executable documentation: In addition to including examples, SpyREST also needs to allow users to execute the example scenarios so that they can try the API features without having to write code as recommended in related work \cite{Hoffman_api_documentation} \cite{Myers_study}.
-  \item Version awareness: SpyREST needs to allow API developers to publish documentation for multiple versions of a Web API as it evolves. The following comment from a API user of Stripe shows the importance of a version-aware documentation tool \footnote{\url{https://groups.google.com/a/lists.stripe.com/forum/#!searchin/api-discuss/version/api-discuss/li4PyVcweiw/NT9SFTtF-vQJ}}
+
+  \textbf{Automated RESTful API documentation}: RESTful APIs are either documented manually or using custom tools to partially automate the process. Both processes can be expensive to maintain since API documentation is a continuous process to support the evolution of APIs. The primary requirement for SpyREST is to find a pragmatic approach to automatically generate RESTful API documentation.
+
+
+  \textbf{Example based}: As discussed in the related work section, several authors have emphasized on including example scenarios with API documentation to help users understand how to use an API \cite{Robillard_what_makes} \cite{Kuhn_on_designing} \cite{Hoffman_api_documentation} \cite{Nasehi_what_makes}. SpyREST generated API documentation needs to include example scenarios.
+
+  \textbf{Executable documentation}: In addition to including examples, SpyREST also needs to allow users to execute the example scenarios so that they can try the API features without having to write code as recommended in related work \cite{Hoffman_api_documentation} \cite{Myers_study}.
+
+  \textbf{Version awareness}: SpyREST needs to allow API developers to publish documentation for multiple versions of a Web API as it evolves. The following comment from a API user of Stripe shows the importance of a version-aware documentation tool \footnote{\url{https://groups.google.com/a/lists.stripe.com/forum/#!searchin/api-discuss/version/api-discuss/li4PyVcweiw/NT9SFTtF-vQJ}}
 :
   \small
   \begin{quotation}
@@ -508,10 +509,12 @@ The following list of requirements for SpyREST is derived from analyzing the afo
   \end{quotation}
   \normalsize
 
-  \item Customizable: SpyREST needs to allow users to edit overview information in addition to the auto generated content as recommended by \cite{Robillard_what_makes}.
-  \item Reusable: SpyREST needs to work as a reusable and shared platform so that multiple REST API documentations can be generated and published on a single platform to get the benefits as outlined by Stepalina \cite{Stepalina_saas}.
-  \item Collaborative
-\end{itemize}
+  \textbf{Customizable}: Robillard identified the importance of customized overview information about how to use an API to reduce API learning obstacles \cite{Robillard_what_makes}. Custom content is also required to explain business rules and overview information about APIs that may not be automatically derivable. SpyREST needs to allow users to add customized content to auto generated RESTful API documentation to enrich the quality of the documentation.
+
+  \textbf{Reusable}: SpyREST needs to work as a reusable platform so that multiple REST API documentations can be generated and published on a single platform to get the benefits as outlined by Stepalina \cite{Stepalina_saas}.
+
+  \textbf{Collaborative}: SpyREST needs to allow people to collaborate on the API documentation so that questions and answers about APIs can coexist with the API documentation to overcome the obstacles with fragmented knowledge sources as identified by Chen et al. \cite{Chen_who_asked}.
+
 
 \subsection{SpyREST Components} % (fold)
 
@@ -558,6 +561,8 @@ Include screenshot for each
 
 \subsubsection{Collaborative}
   integrated commenting
+
+\section{SpyREST In Action}
 
 \section{Discussion}
 How is it different from the existing tools?
