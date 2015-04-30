@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2015 21:57
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2015 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -102,7 +102,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count90
 \@IEEEtranrubishbin=\box26
-) (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/listings.sty
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/listings.sty
 (/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
@@ -209,18 +214,18 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 ) (./spy_rest.aux)
 \openout1 = `spy_rest.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 \c@lstlisting=\count103
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -293,158 +298,73 @@ Underfull \vbox (badness 4699) has occurred while \output is active []
 
 
 ]
-
-LaTeX Warning: Citation `Robillard_a_field_study' on page 2 undefined on input 
-line 466.
-
-
-LaTeX Warning: Citation `Kuhn_on_designing' on page 2 undefined on input line 4
-66.
-
-
-LaTeX Warning: Citation `Hoffman_api_documentation' on page 2 undefined on inpu
-t line 466.
-
-
-LaTeX Warning: Citation `Nasehi_what_makes' on page 2 undefined on input line 4
-68.
-
-
-LaTeX Warning: Citation `Parnin_measuring' on page 2 undefined on input line 46
-8.
-
-
-LaTeX Warning: Citation `Chen_who_asked' on page 2 undefined on input line 468.
-
-
-
-LaTeX Warning: Citation `Subramanian_live' on page 2 undefined on input line 46
-8.
-
-
-LaTeX Warning: Citation `Stepalina_saas' on page 2 undefined on input line 470.
-
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 472.
+(Font)              <7> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 472.
+(Font)              <5> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 472.
+(Font)              <8> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 472.
+(Font)              <6> on input line 68.
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--472
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
 [][][]\OT1/ptm/m/n/8 http://www.oracle.com/technetwork/java/javase/documentatio
 n/index-jsp-
  []
-
-
-LaTeX Warning: Citation `Jadeite' on page 2 undefined on input line 472.
-
-
-LaTeX Warning: Citation `Danielsen_validation' on page 2 undefined on input lin
-e 477.
-
-
-LaTeX Warning: Citation `Verborgh_functional' on page 2 undefined on input line
- 479.
-
-
-LaTeX Warning: Citation `Mangler_rddl' on page 2 undefined on input line 479.
 
 [2]
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no ´ in font ptmr7t!
 
-
-LaTeX Warning: Citation `Kopecky_hrests' on page 3 undefined on input line 481.
-
-
-
-LaTeX Warning: Citation `Maleshkova_omnivoke' on page 3 undefined on input line
- 483.
-
-
-LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 485.
-
-
-LaTeX Warning: Citation `Kuhn_on_designing' on page 3 undefined on input line 5
-03.
-
-
-LaTeX Warning: Citation `Hoffman_api_documentation' on page 3 undefined on inpu
-t line 503.
-
-
-LaTeX Warning: Citation `Nasehi_what_makes' on page 3 undefined on input line 5
-03.
-
-
-LaTeX Warning: Citation `Hoffman_api_documentation' on page 3 undefined on inpu
-t line 505.
-
-
-LaTeX Warning: Citation `Myers_study' on page 3 undefined on input line 505.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 507--507
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 [][][]$\OT1/ptm/m/n/8 https : / / groups . google . com / a / lists . stripe . 
 com / forum / # ! searchin / api-[]discuss /
  []
 
-
-LaTeX Warning: Citation `Stepalina_saas' on page 3 undefined on input line 518.
-
-
-
-LaTeX Warning: Citation `Chen_who_asked' on page 3 undefined on input line 520.
-
-
-(./components.pdf_tex <components.pdf, id=13, 550.02988pt x 116.03413pt>
+[3] (./components.pdf_tex <components.pdf, id=16, 550.02988pt x 116.03413pt>
 File: components.pdf Graphic file (type pdf)
 
 <use components.pdf>
 Package pdftex.def Info: components.pdf used on input line 52.
 (pdftex.def)             Requested size: 253.04987pt x 53.3834pt.
-) [3]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 553.
+)
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 149.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 553.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
 
-Underfull \hbox (badness 2818) in paragraph at lines 562--577
+Underfull \hbox (badness 2818) in paragraph at lines 158--173
 \OT1/ptm/m/n/10 Spy au-to-mat-i-cally saves the raw re-quest and re-sponse
  []
 
 
-Overfull \hbox (13.59827pt too wide) in paragraph at lines 562--577
+Overfull \hbox (13.59827pt too wide) in paragraph at lines 158--173
 [] 
  []
 
 <spyrest_header.png, id=17, 429.605pt x 670.505pt>
 File: spyrest_header.png Graphic file (type png)
  <use spyrest_header.png>
-Package pdftex.def Info: spyrest_header.png used on input line 597.
+Package pdftex.def Info: spyrest_header.png used on input line 193.
 (pdftex.def)             Requested size: 209.63669pt x 327.18959pt.
 
 <spyrest_examples.png, id=19, 600.2425pt x 745.78625pt>
 File: spyrest_examples.png Graphic file (type png)
 
 <use spyrest_examples.png>
-Package pdftex.def Info: spyrest_examples.png used on input line 601.
+Package pdftex.def Info: spyrest_examples.png used on input line 197.
 (pdftex.def)             Requested size: 262.04987pt x 325.5979pt.
  [4 <./components.pdf>]
-Underfull \hbox (badness 5970) in paragraph at lines 618--619
+Underfull \hbox (badness 5970) in paragraph at lines 214--215
 []\OT1/ptm/m/n/10 Fig 2[] shows screen shots (con-tent and pre-sen-ta-
  []
 
 
-Underfull \hbox (badness 5345) in paragraph at lines 618--619
+Underfull \hbox (badness 5345) in paragraph at lines 214--215
 \OT1/ptm/m/n/10 gen-er-ated doc-u-men-ta-tion solely based on an ex-am-ple
  []
 
@@ -452,26 +372,26 @@ Underfull \hbox (badness 5345) in paragraph at lines 618--619
 <curl.png, id=31, 601.24625pt x 216.81pt>
 File: curl.png Graphic file (type png)
  <use curl.png>
-Package pdftex.def Info: curl.png used on input line 630.
+Package pdftex.def Info: curl.png used on input line 226.
 (pdftex.def)             Requested size: 253.04987pt x 91.25145pt.
 
-Overfull \hbox (10.69345pt too wide) in paragraph at lines 640--655
+Overfull \hbox (10.69345pt too wide) in paragraph at lines 236--251
 [][] 
  []
 
 <edit.png, id=32, 340.27126pt x 320.19624pt>
 File: edit.png Graphic file (type png)
  <use edit.png>
-Package pdftex.def Info: edit.png used on input line 664.
+Package pdftex.def Info: edit.png used on input line 260.
 (pdftex.def)             Requested size: 126.52493pt x 119.06192pt.
 
 <preview.png, id=33, 439.6425pt x 317.185pt>
 File: preview.png Graphic file (type png)
  <use preview.png>
-Package pdftex.def Info: preview.png used on input line 668.
+Package pdftex.def Info: preview.png used on input line 264.
 (pdftex.def)             Requested size: 113.87166pt x 82.15155pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 669--669
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
 []\OT1/ptm/m/n/9 (b) |Pre-view-ing cus-tomized
  []
 
@@ -479,10 +399,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 669--669
 <comments.png, id=40, 523.9575pt x 400.49625pt>
 File: comments.png Graphic file (type png)
  <use comments.png>
-Package pdftex.def Info: comments.png used on input line 681.
+Package pdftex.def Info: comments.png used on input line 277.
 (pdftex.def)             Requested size: 253.04987pt x 193.42155pt.
 
-(./spy_rest.bbl)
+(./spy_rest.bbl
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+[7 <./comments.png>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -494,29 +423,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7 <./comments.png>] (./spy_rest.aux)
+[8
 
-LaTeX Warning: There were undefined references.
-
- ) 
+] (./spy_rest.aux) ) 
 Here is how much of TeX's memory you used:
- 4636 strings out of 493488
- 74713 string characters out of 3141326
- 145147 words of memory out of 3000000
- 7896 multiletter control sequences out of 15000+200000
+ 4734 strings out of 493488
+ 75973 string characters out of 3141326
+ 146073 words of memory out of 3000000
+ 7991 multiletter control sequences out of 15000+200000
  40814 words of font info for 74 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,12n,40p,1722b,1162s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dis
-t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
-pe1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (7 pages, 263167 bytes).
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
+al/texlive/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/tex
+mf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on spy_rest.pdf (8 pages, 279230 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
