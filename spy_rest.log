@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  30 APR 2015 09:23
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  30 APR 2015 09:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -436,7 +436,7 @@ fb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/l
 ocal/texlive/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texl
 ive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (8 pages, 293913 bytes).
+Output written on spy_rest.pdf (8 pages, 293882 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream

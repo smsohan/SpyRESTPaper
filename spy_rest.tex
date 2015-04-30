@@ -243,7 +243,7 @@ This panel containing the executable API example is editable on the user interfa
 
 \textbf{Version awareness:} SpyREST allows API developers to publish the documentation for multiple version of their RESTful APIs. To organize API documentations and examples under multiple versions, SpyREST has an automatic version detection algorithm that parses the ``accept'' request header or the URL. Table \ref{table:versions} shows some examples of auto-detected versions. To cover the commonly used versioning schemes, the version detection logic tokenizes the ``accept'' header and URL to find segments that are prefixed with a ``v'' followed by numbers. In case this heuristic fails to detect a version, the examples are recorded under ``Default'' version. If required, the auto version detection algorithm can be suppressed by specifying the version in the custom ``x-spy-rest-version'' header when running example API calls through the Spy in.
 
-\begin{table}
+\begin{table}[!tbh]
   \begin{tabular}{|p{0.2\linewidth}|p{0.5\linewidth}|p{0.2\linewidth}|}
     \hline
     Type & Example Value & Detected version\\
