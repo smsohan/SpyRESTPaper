@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2015 22:55
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  30 APR 2015 09:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -337,65 +337,70 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
 
-<spyrest_header.png, id=17, 429.605pt x 670.505pt>
+<data_model.png, id=17, 525.965pt x 574.145pt>
+File: data_model.png Graphic file (type png)
+ <use data_model.png>
+Package pdftex.def Info: data_model.png used on input line 180.
+(pdftex.def)             Requested size: 253.04987pt x 276.23476pt.
+
+<spyrest_header.png, id=19, 429.605pt x 670.505pt>
 File: spyrest_header.png Graphic file (type png)
  <use spyrest_header.png>
-Package pdftex.def Info: spyrest_header.png used on input line 195.
+Package pdftex.def Info: spyrest_header.png used on input line 193.
 (pdftex.def)             Requested size: 209.63669pt x 327.18959pt.
 
-<spyrest_examples.png, id=19, 600.2425pt x 745.78625pt>
+<spyrest_examples.png, id=20, 600.2425pt x 745.78625pt>
 File: spyrest_examples.png Graphic file (type png)
 
 <use spyrest_examples.png>
-Package pdftex.def Info: spyrest_examples.png used on input line 199.
+Package pdftex.def Info: spyrest_examples.png used on input line 197.
 (pdftex.def)             Requested size: 262.04987pt x 325.5979pt.
- [4 <./components.pdf>]
-Underfull \hbox (badness 5970) in paragraph at lines 216--217
-[]\OT1/ptm/m/n/10 Fig 2[] shows screen shots (con-tent and pre-sen-ta-
+ [4 <./components.pdf> <./data_model.png>]
+Underfull \vbox (badness 2351) has occurred while \output is active []
+
+ [5 <./spyrest_header.png> <./spyrest_examples.png>]
+Underfull \hbox (badness 5970) in paragraph at lines 225--226
+[]\OT1/ptm/m/n/10 Fig 3[] shows screen shots (con-tent and pre-sen-ta-
  []
 
 
-Underfull \hbox (badness 5345) in paragraph at lines 216--217
+Underfull \hbox (badness 5345) in paragraph at lines 225--226
 \OT1/ptm/m/n/10 gen-er-ated doc-u-men-ta-tion solely based on an ex-am-ple
  []
 
-
-Underfull \vbox (badness 1320) has occurred while \output is active []
-
- [5 <./spyrest_header.png> <./spyrest_examples.png>]
-<curl.png, id=31, 601.24625pt x 216.81pt>
+<curl.png, id=33, 601.24625pt x 216.81pt>
 File: curl.png Graphic file (type png)
  <use curl.png>
-Package pdftex.def Info: curl.png used on input line 228.
+Package pdftex.def Info: curl.png used on input line 237.
 (pdftex.def)             Requested size: 253.04987pt x 91.25145pt.
 
-Overfull \hbox (10.69345pt too wide) in paragraph at lines 238--253
+Overfull \hbox (10.69345pt too wide) in paragraph at lines 247--262
 [][] 
  []
 
-<edit.png, id=32, 340.27126pt x 320.19624pt>
+[6 <./curl.png>] <edit.png, id=38, 340.27126pt x 320.19624pt>
 File: edit.png Graphic file (type png)
  <use edit.png>
-Package pdftex.def Info: edit.png used on input line 262.
+Package pdftex.def Info: edit.png used on input line 271.
 (pdftex.def)             Requested size: 126.52493pt x 119.06192pt.
 
-<preview.png, id=33, 439.6425pt x 317.185pt>
+<preview.png, id=39, 439.6425pt x 317.185pt>
 File: preview.png Graphic file (type png)
  <use preview.png>
-Package pdftex.def Info: preview.png used on input line 266.
+Package pdftex.def Info: preview.png used on input line 275.
 (pdftex.def)             Requested size: 113.87166pt x 82.15155pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
 []\OT1/ptm/m/n/9 (b) |Pre-view-ing cus-tomized
  []
 
-[6 <./curl.png>] <comments.png, id=38, 523.9575pt x 400.49625pt>
+<comments.png, id=40, 523.9575pt x 400.49625pt>
 File: comments.png Graphic file (type png)
-
-<use comments.png>
-Package pdftex.def Info: comments.png used on input line 279.
+ <use comments.png>
+Package pdftex.def Info: comments.png used on input line 288.
 (pdftex.def)             Requested size: 253.04987pt x 193.42155pt.
- (./spy_rest.bbl
+
+(./spy_rest.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -418,10 +423,10 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./spy_rest.aux) ) 
 Here is how much of TeX's memory you used:
- 4733 strings out of 493488
- 75960 string characters out of 3141326
- 144073 words of memory out of 3000000
- 7990 multiletter control sequences out of 15000+200000
+ 4739 strings out of 493488
+ 76065 string characters out of 3141326
+ 144081 words of memory out of 3000000
+ 7995 multiletter control sequences out of 15000+200000
  40814 words of font info for 74 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,12n,40p,1722b,1162s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -431,10 +436,10 @@ fb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/l
 ocal/texlive/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texl
 ive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (8 pages, 271904 bytes).
+Output written on spy_rest.pdf (8 pages, 293913 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
