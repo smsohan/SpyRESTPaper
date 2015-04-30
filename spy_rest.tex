@@ -129,7 +129,7 @@ SpyREST is composed of three main components as shown in Fig. \ref{fig:component
 
 \textbf{The Spy:} SpyREST is driven by example calls to the RESTful APIs to generate the documentation for the APIs. The Spy component, a HTTP proxy server, in SpyREST is named so because it records the HTTP traffic for example API calls that are made using it as a proxy server. For example, when using Spy as a HTTP proxy to make the following HTTP request:
 
-\scriptsize
+\footnotesize
 \begin{description}
   \item[Method] GET
   \item[URL] https://api.github.com/repositories?since=100
@@ -137,7 +137,7 @@ SpyREST is composed of three main components as shown in Fig. \ref{fig:component
 \end{description}
 \normalsize
 that produces the following response:
-\scriptsize
+\footnotesize
 \begin{description}
   \item[Headers] status: 200 OK \\
 content-type: application/json; charset=utf-8 \\
@@ -156,8 +156,9 @@ content-type: application/json; charset=utf-8 \\
 \end{description}
 \normalsize
 Spy automatically saves the raw request and response data with HTTP headers. Additionally, it synthesizes the data and saves the following meta data about this example API call:
-\scalebox{0.7}{
-\begin{tabular}{r l}
+
+\footnotesize
+\begin{tabular}{r p{0.55\linewidth}}
   version & v3 \\
   resource & repositories \\
   action & GET /repositories \\
@@ -169,7 +170,8 @@ Spy automatically saves the raw request and response data with HTTP headers. Add
   apiToken & blank, used when a SpyREST API token is provided \\
   userId & blank, used when a user is found for given apiToken \\
 \end{tabular}
-}
+\normalsize
+
 
 As shown in this example, the version ``v3'' is automatically detected by parsing the accept request header. The automatic version detection algorithm can extract version information from either the request URL or accept header for most commonly used formats. Next, the resource field is also auto detected as ``repositories'' by parsing the request URL. The action ``GET /repositories'' is automatically detected by combining the request HTTP method with request path. The strippedResponseBody field automatically saves a shorter version of the actual response where large arrays in the response body are recursively truncated to smaller arrays with two sample items to reduce noise from the generated documentation. These meta fields allow SpyREST to structure the example API calls for a given API host in a hierarchical model as follows: an API has many versions, each version has many resources, each resource has many actions, and each action has many examples.
 
