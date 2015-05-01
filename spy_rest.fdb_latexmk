@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex spy_rest"] 1430495878 "spy_rest.aux" "spy_rest.bbl" "spy_rest" 1430495880
+["bibtex spy_rest"] 1430507849 "spy_rest.aux" "spy_rest.bbl" "spy_rest" 1430507924
   "./IEEEtran.bst" 1168506946 59215 bc5380b3434a66b895bbc75d3d380540 ""
   "references.bib" 1430368628 24413 83cd5ddadbe9bbaaef10db9bfa6c2635 ""
-  "spy_rest.aux" 1430495879 4323 de6ac0020c605c05fcda6b38280f4035 ""
+  "spy_rest.aux" 1430507924 4323 e18e156105b1752780f60f6840e54ccb ""
   "spy_rest.bcf" 0 -1 0 ""
   (generated)
   "spy_rest.blg"
   "spy_rest.bbl"
-["pdflatex"] 1430495878 "spy_rest.tex" "spy_rest.pdf" "spy_rest" 1430495880
+["pdflatex"] 1430507923 "spy_rest.tex" "spy_rest.pdf" "spy_rest" 1430507924
   "/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -58,9 +58,9 @@
   "notification_example.png" 1430458091 73194 e43edab4df822a2dce9663c0086cd42e ""
   "notifications_query.png" 1430456984 41892 6720ed2a18bde4f20fe4456d31222f63 ""
   "preview.png" 1430339807 36829 cff85577562d26d1760190f8fd1841b9 ""
-  "spy_rest.aux" 1430495879 4323 de6ac0020c605c05fcda6b38280f4035 ""
-  "spy_rest.bbl" 1430495878 6925 158aa57c3fc27dac8f5174369ada6ee9 "bibtex spy_rest"
-  "spy_rest.tex" 1430495875 47241 e98006e58505d3c0c53781c1dcb5f6e9 ""
+  "spy_rest.aux" 1430507924 4323 e18e156105b1752780f60f6840e54ccb ""
+  "spy_rest.bbl" 1430507850 6925 158aa57c3fc27dac8f5174369ada6ee9 "bibtex spy_rest"
+  "spy_rest.tex" 1430507923 49070 1350732af1f3d5d55329f52f448887f7 ""
   "spyrest_examples.png" 1430324997 91140 9aaf9c2757d8aacd54ab5b0e66cf45e2 ""
   "spyrest_header.png" 1430324191 66634 3061e659708bd75e68a0c4afcb166699 ""
   (generated)
