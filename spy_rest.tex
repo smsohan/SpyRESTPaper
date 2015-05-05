@@ -316,29 +316,16 @@ end
 
 describe 'Notifications' do
 
-  it 'List all notifications for the current user' do
-    response = Github.get '/notifications'
-    assert_equal 200, response.code
-  end
+  it 'List all notifications for the current user, where they are participating, since a time' do
 
-  it 'List all notifications including read ones for the current user' do
-    response = Github.get '/notifications?all=true'
-    assert_equal 200, response.code
-  end
+    response = Github.get '/notifications?all=true&participating=true&since=2014-01-01T00:00:00Z'
 
-  it 'List notifications only where the current user is directly participating or mentioned' do
-    response = Github.get '/notifications?participating=true'
-    assert_equal 200, response.code
-  end
-
-  it 'List notifications since a time' do
-    response = Github.get '/notifications?since=2014-01-01T00:00:00Z'
     assert_equal 200, response.code
   end
 
 end\end{lstlisting}
 
-To auto-generate the API documentation for notifications API in GitHub, we first setup the base URL and required HTTP request headers on lines 4-6 inside the \texttt{Github} class. Next, we setup the proxy connection to go through the Spy on line 12. Then we provide four example API calls each describing a different use case for the \texttt{/notifications} action on lines 15-37 that use the \texttt{GitHub} class. These examples are written as automated tests using the RSpec testing framework\footnote{\url{http://rspec.info/}} so that in addition to generating the API documentation, API developers can use the same code as functional tests for the API and vice versa, essentially performing ``test driven documentation''. With this setup, when the tests are run, it executes the example API calls and SpyREST automatically generates the API documentation for the \texttt{/notifications} action.
+To auto-generate the API documentation for notifications API in GitHub, we first setup the base URL and required HTTP request headers on lines 4-6 inside the \texttt{Github} class. Next, we setup the proxy connection to go through the Spy on line 12. Then we provide an example API call describing a use case for the \texttt{/notifications} action on lines 15-22 that use the \texttt{GitHub} class. This example is written as an automated test using the RSpec testing framework\footnote{\url{http://rspec.info/}} so that in addition to generating the API documentation, API developers can use the same code as functional tests for the API and vice versa, essentially performing ``test driven documentation''. With this setup, when the tests are run, it executes the example API calls and SpyREST automatically generates the API documentation for the \texttt{/notifications} action.
 
 
 \begin{figure}[!tbh]
@@ -357,9 +344,9 @@ Fig. \ref{fig:notifications_query} shows a screen shot of the auto generated sum
   \label{fig:notification_example}
 \end{figure}
 
-In addition to showing the structure of the API objects, SpyREST also displays the actual data collected from the four example APIs on the auto generated documentation. Fig. \ref{fig:notification_example} shows a fragment of the documentation for the example API call generated from line 22 on the test code. On line 8 of our test code, we set the required \texttt{authorization} header for GitHub. The Spy does not save this secret value and the auto-generated documentation displays \texttt{authorization: FILTERED} in the Request Headers section as shown in Fig. \ref{fig:notification_example}. Because of the presence of this \texttt{authorization} header, SpyREST also automatically includes a ``Requires Authorization'' message on the documentation. SpyREST also auto generates the cURL command to allow users to execute this example API call without writing any code. As discussed earlier, SpyREST features a commenting section on every API documentation page to allow users to collaborate and find relevant information on the APIs.
+In addition to showing the structure of the API objects, SpyREST also displays the actual data collected from the four example APIs on the auto generated documentation. Fig. \ref{fig:notification_example} shows a fragment of the documentation for the example API call generated from line 15 on the test code. On line 8 of our test code, we set the required \texttt{authorization} header for GitHub. The Spy does not save this secret value and the auto-generated documentation displays \texttt{authorization: FILTERED} in the Request Headers section as shown in Fig. \ref{fig:notification_example}. Because of the presence of this \texttt{authorization} header, SpyREST also automatically includes a ``Requires Authorization'' message on the documentation. SpyREST also auto generates the cURL command to allow users to execute this example API call without writing any code. As discussed earlier, SpyREST features a commenting section on every API documentation page to allow users to collaborate and find relevant information on the APIs.
 
-In this case study, we have shown how a total of 29 lines of executable test code, excluding blank lines, has been used to auto-generate the documentation of the \texttt{/notifications} action for the Github API. We consider the effort required for writing the test code to be simpler than the effort that'd be required to manually write an API documentation with similar content. Moreover, when the API changes, a replay of the test code will automatically update the documentation.
+In this case study, we have shown how a total of 17 lines of executable test code, excluding blank lines, has been used to auto-generate the documentation of the \texttt{/notifications} action for the Github API. We consider the effort required for writing the test code to be simpler than the effort that'd be required to manually write an API documentation with similar content. Moreover, when the API changes, a replay of the test code will automatically update the documentation.
 
 Even though Ruby and RSpec test framework has been used in this demonstration, any RESTful API client can be used instead. An automated way to run the example APIs are preferred since it is easier to repeat and maintain than a manual approach. We recommend using a test framework because it combines the benefits of both automated testing and documentation from the same effort.
 
@@ -383,9 +370,9 @@ The current implementation of SpyREST limits it to be used on JSON based RESTful
 We have used SpyREST to auto generate documentation for APIs sampled from three RESTful API providers\footnote{\url{https://github.com/smsohan/spyrest_examples}}: GitHub.com, KISSMetrics.com, and CakeSide.com as a proof of concept and found the proxy server based solution meet the requirements R1-7. Further evaluation is needed in our future work involving RESTful API developers and users to understand and improve the effectiveness of the SpyREST features.
 
 \section{Conclusion}
-In this paper, we have introduced a novel approach of using a HTTP proxy server to auto generate RESTful API documentation. With SpyREST, we have demonstrated how this new approach can be used to reduce the effort and cost associated with a manual approach to do the same. In addition to the auto generated documentation, SpyREST includes features such as executable example API calls, support for multiple versions, customization and collaboration that are offered both as a shared and self-hosted platforms. These features have been recommended by existing research on the documentation of APIs. In this paper, we have compared SpyREST with existing API documentation tools to show the advantages of using SpyREST over other tools and manual approaches for documenting RESTful APIs. We have demonstrated using SpyREST with automated test code so the benefits of an automated test and an updated API documentation can be realized from a single code base. Overall, based on the outcome of our work on SpyREST, we conclude that a proxy server based approach shows a pragmatic solution to the RESTful API documentation problem.
+In this paper, we have introduced a novel technique of using a HTTP proxy server to auto generate RESTful API documentation. With SpyREST, we have shown an implementation of the technique and compared its advantages over existing techniques related to RESTful API documentation. The proxy server based solution supports integrated features such as automated RESTful API documentation with executable example API calls, support for multiple versions, customization and collaboration that are offered both as a shared and self-hosted platforms. These features have been recommended by existing research on the documentation of APIs. We have demonstrated using SpyREST with automated test code so that RESTful API documentation can be achieved as a positive side-effect of executing automated tests. Overall, based on the outcome of our work on SpyREST, we conclude that a proxy server based approach shows a pragmatic solution to the RESTful API documentation problem.
 
-In our future work, we want to perform and report a user study involving developers and users of RESTful APIs to find out the strengths and shortcomings of SpyREST compared to the existing solutions. In addition to incorporating the feedback collected from the user study, we also want to continue our research on evolution of RESTful APIs so that SpyREST can be enhanced to better support the documentation needs for RESTful APIs that evolve.
+In future, we will perform and report a qualitative user study involving developers and users of RESTful APIs to find out the strengths and shortcomings of SpyREST compared to the existing solutions. In addition to incorporating the feedback collected from the user study, we will continue our research on the evolution of RESTful APIs to extend the HTTP proxy served based technique to better support the documentation needs for RESTful APIs that evolve.
 
 \section*{Acknowledgment}
 \small
