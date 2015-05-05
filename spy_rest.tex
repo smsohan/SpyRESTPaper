@@ -5,7 +5,7 @@
 \usepackage{cite}
 \usepackage{listings}
 \usepackage{amsmath}
-
+\usepackage[tableposition=top]{caption}
 \ifCLASSINFOpdf
 \usepackage[pdftex]{graphicx}
 \usepackage[pdftex]{color}
@@ -92,17 +92,15 @@ In addition to the research community, there are several RESTful API specificati
 \subsection{SpyREST Requirements} % (fold)
 \label{sub:spyrest_requirements}
 
-The following list of requirements for SpyREST is derived from analyzing the aforementioned related work and current API documentation practices as observed in the industry:
+The following list of requirements for SpyREST, R1-7 in priority order, is derived from analyzing the aforementioned related work and current API documentation practices as observed in the industry:
 
+  \textbf{R1 - Automated RESTful API documentation}: RESTful APIs are either documented manually or using custom tools to partially automate the process. Both processes can be expensive to maintain since API documentation is a continuous process to support the evolution of APIs. The primary requirement for SpyREST is to find a pragmatic approach to automatically generate RESTful API documentation.
 
-  \textbf{Automated RESTful API documentation}: RESTful APIs are either documented manually or using custom tools to partially automate the process. Both processes can be expensive to maintain since API documentation is a continuous process to support the evolution of APIs. The primary requirement for SpyREST is to find a pragmatic approach to automatically generate RESTful API documentation.
+  \textbf{R2 - Example based}: As discussed in the related work section, several authors have emphasized on including example scenarios with API documentation to help users understand how to use an API \cite{Robillard_what_makes} \cite{Kuhn_on_designing} \cite{Hoffman_api_documentation} \cite{Nasehi_what_makes}. SpyREST generated API documentation needs to include example scenarios.
 
+  \textbf{R3 - Executable documentation}: In addition to including examples, SpyREST also needs to allow users to execute the example scenarios so that they can try the API features without having to write code as recommended in related work \cite{Hoffman_api_documentation} \cite{Myers_study}.
 
-  \textbf{Example based}: As discussed in the related work section, several authors have emphasized on including example scenarios with API documentation to help users understand how to use an API \cite{Robillard_what_makes} \cite{Kuhn_on_designing} \cite{Hoffman_api_documentation} \cite{Nasehi_what_makes}. SpyREST generated API documentation needs to include example scenarios.
-
-  \textbf{Executable documentation}: In addition to including examples, SpyREST also needs to allow users to execute the example scenarios so that they can try the API features without having to write code as recommended in related work \cite{Hoffman_api_documentation} \cite{Myers_study}.
-
-  \textbf{Version awareness}: SpyREST needs to allow API developers to publish documentation for multiple versions of a Web API as it evolves. The following comment from a API user of Stripe shows the importance of a version-aware documentation tool \footnote{\url{https://groups.google.com/a/lists.stripe.com/forum/#!searchin/api-discuss/version/api-discuss/li4PyVcweiw/NT9SFTtF-vQJ}}
+  \textbf{R4 - Version awareness}: SpyREST needs to allow API developers to publish documentation for multiple versions of a Web API as it evolves. The following comment from a API user of Stripe shows the importance of a version-aware documentation tool \footnote{\url{https://groups.google.com/a/lists.stripe.com/forum/#!searchin/api-discuss/version/api-discuss/li4PyVcweiw/NT9SFTtF-vQJ}}
 :
   \small
   \begin{quotation}
@@ -111,11 +109,11 @@ The following list of requirements for SpyREST is derived from analyzing the afo
   \end{quotation}
   \normalsize
 
-  \textbf{Customizable}: Robillard identified the importance of customized overview information about how to use an API to reduce API learning obstacles \cite{Robillard_what_makes}. Custom content is also required to explain business rules and overview information about APIs that may not be automatically derivable. SpyREST needs to allow users to add customized content to auto generated RESTful API documentation to enrich the quality of the documentation.
+  \textbf{R5 - Customizable}: Robillard identified the importance of customized overview information about how to use an API to reduce API learning obstacles \cite{Robillard_what_makes}. Custom content is also required to explain business rules and overview information about APIs that may not be automatically derivable. SpyREST needs to allow users to add customized content to auto generated RESTful API documentation to enrich the quality of the documentation.
 
-  \textbf{Reusable}: SpyREST needs to work as a reusable platform so that multiple REST API documentations can be generated and published on a single platform to get the benefits as outlined by Stepalina \cite{Stepalina_saas}.
+  \textbf{R6 - Reusable}: SpyREST needs to work as a reusable platform so that multiple REST API documentations can be generated and published on a single platform to get the benefits as outlined by Stepalina \cite{Stepalina_saas}.
 
-  \textbf{Collaborative}: SpyREST needs to allow people to collaborate on the API documentation so that questions and answers about APIs can coexist with the API documentation to overcome the obstacles with fragmented knowledge sources as identified by Chen et al. \cite{Chen_who_asked}.
+  \textbf{R7 - Collaborative}: SpyREST needs to allow people to collaborate on the API documentation so that questions and answers about APIs can coexist with the API documentation to overcome the obstacles with fragmented knowledge sources as identified by Chen et al. \cite{Chen_who_asked}.
 
 
 \subsection{SpyREST Components} % (fold)
@@ -129,7 +127,7 @@ SpyREST is composed of three main components as shown in Fig. \ref{fig:component
 \label{fig:components}
 \end{figure}
 
-\textbf{The Spy:} SpyREST is driven by example calls to the RESTful APIs to generate the documentation for the APIs. The Spy component, a HTTP proxy server, in SpyREST is named so because it records the HTTP traffic for example API calls that are made using it as a proxy server. For example, when using Spy as a HTTP proxy to make the following HTTP request:
+\textbf{The Spy:} SpyREST is driven by example calls to the RESTful APIs to generate the documentation for the APIs. The Spy component in SpyREST is a HTTP proxy server. The Spy is named so because it records the HTTP traffic for example API calls that are made using it as a proxy server. For example, when using Spy as a HTTP proxy to make the following HTTP request:
 
 \footnotesize
 \begin{description}
@@ -184,11 +182,6 @@ As shown in this example, the version ``v3'' is automatically detected by parsin
   \label{fig:data_model}
 \end{figure}
 
-
-Auto detection algorithms for version, resource and action fields may be overridden by providing SpyREST with additional headers when example API calls are executed. For example, a user can use the custom header ``x-spy-rest-resource: repos'' when making example API calls to override the automatic detection of resource from ``repositories'' to ``repos''. Using a similar approach, users can override the version, action, and description fields using the ``x-spy-rest-version'', ``x-spy-rest-action'' and ``x-spy-rest-description'' headers respectively.
-
-The Spy computes a digest to uniquely identify an API example. The digest is computed based on the version, resource, url and description fields that are extracted from the example. Using this digest, Spy allows the users to replay the the same example and update the recorded information without creating duplicate entries for each run of the same example API. This allows API developers to auto update the documentation when an API changes using the existing examples.
-
 \begin{figure*}[!tbh]
   \centering
   \begin{subfigure}[t]{0.4\textwidth}
@@ -205,6 +198,10 @@ The Spy computes a digest to uniquely identify an API example. The digest is com
   \label{fig:spyrest_screenshots}
 \end{figure*}
 
+Auto detection algorithms for version, resource and action fields may be overridden by providing SpyREST with additional headers when example API calls are executed. For example, a user can use the custom header ``x-spy-rest-resource: repos'' when making example API calls to override the automatic detection of resource from ``repositories'' to ``repos''. Using a similar approach, users can override the version, action, and description fields using the ``x-spy-rest-version'', ``x-spy-rest-action'' and ``x-spy-rest-description'' headers respectively.
+
+The Spy computes a digest to uniquely identify an API example. The digest is computed based on the version, resource, url and description fields that are extracted from the example. Using this digest, Spy allows the users to replay the the same example and update the recorded information without creating duplicate entries for each run of the same example API. This allows API developers to auto update the documentation when an API changes using the existing examples.
+
 
 When saving request information, Spy automatically strips off values used in ``authorization'' request headers to avoid leaking secrets in the API documentation. If an authorization header is found, Spy also marks the example with ``requiresAuth: true'' so that in the generated API documentation it can be visually indicated.
 
@@ -212,19 +209,19 @@ SpyREST allows users to sign up and get an API key to be used for generating API
 
 To record data for an example call to an API that uses a SSL/TLS connection, the Spy needs to perform as an intentional man-in-the-middle style proxy since the data would be encrypted otherwise. We consider the security risks for this approach to be minimal when the example API calls are intended to be recorded for public viewing through the documentation. For APIs where this is not acceptable, the Spy can be installed with the required SSL certificates on their trusted infrastructure to overcome this issue.
 
-The Spy component is built using nodejs\footnote{https://nodejs.org/} and open source libraries and SpyREST currently supports JSON based APIs only.
+The Spy component is built using Node.js\footnote{https://nodejs.org/} and open source libraries and SpyREST currently supports JSON based APIs only.
 
-\textbf{The Database:} MongoDB\footnote{https://www.mongodb.org/}, a widely used document oriented database, is used as the database. MongoDB is  chosen because of its scalability features that could be used by SpyREST to automatically generate documentation of large number of RESTful APIs in a shared platform.
+\textbf{The Database:} The database component saves the data that is captured by the Spy and the web app. The Spy saves the recorded data about the API examples and the auto-computed meta data in the database. The web app saves data about SpyREST users and custom modifications on auto-generated API documentation on the same database. As shown in Fig. \ref{fig:data_model}, all the data models excluding the comments are saved in the database component. The comments are saved on Disqus\footnote{https://disqus.com}, a third-party service that features rich collaboration features for websites. Its document oriented feature allows the Spy to save arbitrary HTTP request and response data in the database. MongoDB\footnote{https://www.mongodb.org/}, a widely used document oriented database, is used to implement the database component. MongoDB's scalability features can be used by SpyREST to automatically generate documentation of large number of RESTful APIs in a shared platform.
 
 \textbf{The Web App:} The web app component further processes and presents auto generated documentation that is captured by Spy in the database. It also allows the users to edit or add custom content to the auto generated documentation. Additionally, the web app includes administration features such as user registration and SpyREST API key management. The features of the web app are discussed later in this paper in greater detail. The web app is written using the Ruby on Rails\footnote{http://rubyonrails.org/} framework primarily because of the first author's past experience using this framework.
 
-The source code for both the Spy and Web app components are released as open source projects. Even though nodejs, MongoDB and Ruby on Rails are used for SpyREST implementation, the ideas that SpyREST realized are not dependent on these specific technologies.
+The source code for both the Spy and Web app components are released as open source projects. Even though Node.js, MongoDB and Ruby on Rails are used for SpyREST implementation, the ideas that SpyREST realized are not dependent on these specific technologies.
 
 \subsection{SpyREST Features} % (fold)
 
 Now that we have explained the three SpyREST components and how they work, in the next paragraphs we discuss how SpyREST satisfies the aforementioned requirements.
 
-\textbf{Automated RESTful API documentation:} The work flow for automated RESTful API documentation can be explained by the following steps: 1) API developer uses the Spy HTTP proxy to run example API calls, 2) The Spy records example API calls, 3) The Spy extracts meta information about the API call, 4) The Web app displays the auto generated documentation, 5) API developers can optionally customize the auto generated documentation.
+\textbf{R1 - Automated RESTful API documentation:} The work flow for automated RESTful API documentation can be explained by the following steps: 1) API developer uses the Spy HTTP proxy to run example API calls, 2) The Spy records example API calls, 3) The Spy extracts meta information about the API call, 4) The Web app displays the auto generated documentation, 5) API developers can optionally customize the auto generated documentation.
 
 Fig \ref{fig:spyrest_screenshots} shows screen shots  (content and presentation adapted for brevity) of fragments from of an auto generated documentation solely based on an example API call to URL \url{https://api.github.com/search/repositories?q=tetris+language:assembly&sort=stars&order=desc} with a custom header ``x-spy-rest-description'' to provide the short description for the example.
 
@@ -232,9 +229,9 @@ The auto-generated API documentation features a summary section as shown in Fig.
 
 The examples section, as shown in Fig. \ref{fig:examples}, on the API documentation shows all the recorded API examples for a given API action. For each example, it shows a description, the request URL, query parameters, and request and response headers and bodies. Because Spy filters out the ``authorization'' request header before saving the examples in the database, the documentation rendered by the web app excludes the secrets. As discussed before, the Spy also computes a ``strippedResponseBody'' by truncating large arrays in API responses to contain only two samples per array. The web app displays this ``strippedResponseBody'' to limit the verbosity on the auto-generated API documentation. Not shown in Fig. \ref{fig:spyrest_screenshots} for brevity, each example in the documentation also includes shows the SpyREST user that ran the API example and the time when it was generated.
 
-\textbf{Example based:} As discussed earlier, SpyREST generated RESTful API documentation includes both the structure of the API objects and concrete examples for different use cases. The API examples are annotated with user provided descriptions through the custom headers that are otherwise hard to automatically infer. Because the Spy computes a hash digest for deduplication, replays of the same API example only updates the auto-generated documentation with the latest information allowing API developers to update the API documentation automatically when the API changes during development time. To record the examples in SpyREST, any REST API client can be used as long as it supports using a HTTP proxy to call the API.
+\textbf{R2 - Example based:} As discussed earlier, SpyREST generated RESTful API documentation includes both the structure of the API objects and concrete examples for different use cases. The API examples are annotated with user provided descriptions through the custom headers that are otherwise hard to automatically infer. Because the Spy computes a hash digest for deduplication, replays of the same API example only updates the auto-generated documentation with the latest information allowing API developers to update the API documentation automatically when the API changes during development time. To record the examples in SpyREST, any REST API client can be used as long as it supports using a HTTP proxy to call the API.
 
-\textbf{Executable documentation:} Because SpyREST keeps a copy of the API request information including URL, headers and request body, it can also recreate the example API calls that can be executed by users of the generated API documentation. Currently, it automatically generates executable test cases that can be run using cURL\footnote{http://curl.haxx.se/}. cURL is a command line based tool that can be used as a REST API client. The examples section on Fig. \ref{fig:spyrest_screenshots} shows a link titled ``Try with cURL'', on click of which the user gets a panel with am executable API call example reconstructed from the recorded data as shown in Fig. \ref{fig:curl}.
+\textbf{R3 -  Executable documentation:} Because SpyREST keeps a copy of the API request information including URL, headers and request body, it can also recreate the example API calls that can be executed by users of the generated API documentation. Currently, it automatically generates executable test cases that can be run using cURL\footnote{http://curl.haxx.se/}. cURL is a command line based tool that can be used as a REST API client. The examples section on Fig. \ref{fig:spyrest_screenshots} shows a link titled ``Try with cURL'', on click of which the user gets a panel with am executable API call example reconstructed from the recorded data as shown in Fig. \ref{fig:curl}.
 
 \begin{figure}[!tbh]
   \centering
@@ -245,9 +242,10 @@ The examples section, as shown in Fig. \ref{fig:examples}, on the API documentat
 
 This panel containing the executable API example is editable on the user interface. This allows the users to modify the API call if they need to customize the auto-generated API call. For example, to change the value of ``order'' query parameter from ``desc'' to ``asc''  as shown in Fig. \ref{fig:curl}, a user can edit the text in this panel before executing the API example in cURL. Although not currently implemented, similar to cURL, SpyREST can generate executable tests targeting other REST API clients and programming languages since the required information to reconstruct an executable test is already available in the database.
 
-\textbf{Version awareness:} SpyREST allows API developers to publish the documentation for multiple version of their RESTful APIs. To organize API documentations and examples under multiple versions, SpyREST has an automatic version detection algorithm that parses the ``accept'' request header or the URL. Table \ref{table:versions} shows some examples of auto-detected versions. To cover the commonly used versioning schemes, the version detection logic tokenizes the ``accept'' header and URL to find segments that are prefixed with a ``v'' followed by numbers. In case this heuristic fails to detect a version, the examples are recorded under ``Default'' version. If required, the auto version detection algorithm can be suppressed by specifying the version in the custom ``x-spy-rest-version'' header when running example API calls through the Spy in.
+\textbf{R4 - Version awareness:} SpyREST allows API developers to publish the documentation for multiple version of their RESTful APIs. To organize API documentations and examples under multiple versions, SpyREST has an automatic version detection algorithm that parses the ``accept'' request header or the URL. Table \ref{table:versions} shows some examples of auto-detected versions. To cover the commonly used versioning schemes, the version detection logic tokenizes the ``accept'' header and URL to find segments that are prefixed with a ``v'' followed by numbers. In case this heuristic fails to detect a version, the examples are recorded under ``Default'' version. If required, the auto version detection algorithm can be suppressed by specifying the version in the custom ``x-spy-rest-version'' header when running example API calls through the Spy in.
 
 \begin{table}[!tbh]
+  \caption{Examples of auto detected versions}
   \begin{tabular}{|p{0.2\linewidth}|p{0.5\linewidth}|p{0.2\linewidth}|}
     \hline
     Type & Example Value & Detected version\\
@@ -263,11 +261,10 @@ This panel containing the executable API example is editable on the user interfa
     URL & \url{/v2.1-pre/users} & v2.1-pre\\
     \hline
   \end{tabular}
-  \caption{Examples of auto detected versions}
   \label{table:versions}
 \end{table}
 
-\textbf{Customizable:} SpyREST allows API developers to modify and add custom free-form contents to the auto generated summary section of the documentation using Markdown\footnote{\url{http://en.wikipedia.org/wiki/Markdown}} syntax. Markdown was chosen because of its popularity as a documentation and code sharing tool among software developers on platforms such as StackOverflow and GitHub. Because SpyREST solely relies on example calls to APIs to auto-generate the API documentations, custom content can be used to provide overview information and explain complicated business rules about the APIs that are not derivable from simply synthesizing the examples. We consider this as a pragmatic solution to augment manual effort with the largely automated solution to the RESTful API documentation effort. The summary section on the API documentation page has a button next to the ``Description'' title that opens up the Markdown editor with preview support as shown in Fig. \ref{fig:markdown}. As shown in this example, a user can annotate the auto-generated documentation for the ``order'' query parameter as being an ``optional field''. The custom edits are persisted in the database and are not overridden when the API examples are replayed unless the user decides to revert back to automated summaries.
+\textbf{R5 - Customizable:} SpyREST allows API developers to modify and add custom free-form contents to the auto generated summary section of the documentation using Markdown\footnote{\url{http://en.wikipedia.org/wiki/Markdown}} syntax. Markdown was chosen because of its popularity as a documentation and code sharing tool among software developers on platforms such as StackOverflow and GitHub. Because SpyREST solely relies on example calls to APIs to auto-generate the API documentations, custom content can be used to provide overview information and explain complicated business rules about the APIs that are not derivable from simply synthesizing the examples. We consider this as a pragmatic solution to augment manual effort with the largely automated solution to the RESTful API documentation effort. The summary section on the API documentation page has a button next to the ``Description'' title that opens up the Markdown editor with preview support as shown in Fig. \ref{fig:markdown}. As shown in this example, a user can annotate the auto-generated documentation for the ``order'' query parameter as being an ``optional field''. The custom edits are persisted in the database and are not overridden when the API examples are replayed unless the user decides to revert back to automated summaries.
 
 \begin{figure}[!tbh]
   \centering
@@ -283,7 +280,7 @@ This panel containing the executable API example is editable on the user interfa
   \label{fig:markdown}
 \end{figure}
 
-\textbf{Reusable:} Because SpyREST only relies on a HTTP proxy to auto-generate RESTful API documentation, it can be used to document RESTful APIs that are developed using any underlying technology. To feed SpyREST with data, any REST API client can be used as long as it supports connecting through a HTTP proxy server. This technology agnostic feature allows SpyREST to be a reusable RESTful API documentation tool.
+\textbf{R6 - Reusable:} Because SpyREST only relies on a HTTP proxy to auto-generate RESTful API documentation, it can be used to document RESTful APIs that are developed using any underlying technology. To feed SpyREST with data, any REST API client can be used as long as it supports connecting through a HTTP proxy server. This technology agnostic feature allows SpyREST to be a reusable RESTful API documentation tool.
 
 SpyREST is offered as a SaaS tool on the internet that can be used to auto-generate and publish documentation of multiple RESTful APIs. For APIs where a SaaS solution is not acceptable, SpyREST can also be installed and used as a self-hosted solution. Because SpyREST is an open-source application, users can customize it to support any unique requirements that are not supported by SpyREST.
 
@@ -295,9 +292,9 @@ SpyREST is offered as a SaaS tool on the internet that can be used to auto-gener
 \end{figure}
 
 
-\textbf{Collaborative:} SpyREST allows the users to comment and discuss API related questions right next to the documentation so that crowdsourced documentations can coexist with the officially published API documentation. The current implementation of commenting features on SpyREST is based on disqus\footnote{https://disqus.com/} as shown in the Fig. \ref{fig:comments}. Each API documentation page on SpyREST features its own discussion thread to help users easily locate relevant information.
+\textbf{R7 - Collaborative:} SpyREST allows the users to comment and discuss API related questions right next to the documentation so that crowdsourced documentations can coexist with the officially published API documentation. The current implementation of commenting features on SpyREST is based on disqus\footnote{https://disqus.com/} as shown in the Fig. \ref{fig:comments}. Each API documentation page on SpyREST features its own discussion thread to help users easily locate relevant information.
 
-\section{SpyREST In Action}
+\section{SpyREST Case-Study}
 Now that we have discussed the different features offered by SpyREST, in this section we discuss a case study of using SpyREST to auto generate the documentation of one API action from the GitHub API. GitHub currently publishes a manually generated documentation of their API at: \url{https://developer.github.com/v3/}.
 
 We start by looking at the manually written notifications list API available at \url{https://developer.github.com/v3/activity/notifications/#list-your-notifications}. Using this API, a GitHub user can fetch notifications about different activities related to their account. To auto-generate the documentation for this API using SpyREST, we need to make some example API calls via the Spy proxy. To make the example API calls, in this demonstration, we use a REST client using a ruby program as follows:
@@ -342,7 +339,7 @@ describe 'Notifications' do
 
 end\end{lstlisting}
 
-To auto-generate the API documentation for notifications API in GitHub, we first setup the base URL and required HTTP request headers on lines 4-6 inside the \texttt{Github} class. Next, we setup the proxy connection to go through the Spy on line 12. Then we provide four example API calls each describing a different use case for the \texttt{/notifications} action on lines 15-37 that use the \texttt{GitHub} class. These examples are written as automated tests using the RSpec testing framework\footnote{\url{http://rspec.info/}} so that in addition to generating the API documentation, API developers can use the same code as functional tests for the API and vice versa. With this setup, when the tests are run, it executes the example API calls and SpyREST automatically generates the API documentation for the \texttt{/notifications} action.
+To auto-generate the API documentation for notifications API in GitHub, we first setup the base URL and required HTTP request headers on lines 4-6 inside the \texttt{Github} class. Next, we setup the proxy connection to go through the Spy on line 12. Then we provide four example API calls each describing a different use case for the \texttt{/notifications} action on lines 15-37 that use the \texttt{GitHub} class. These examples are written as automated tests using the RSpec testing framework\footnote{\url{http://rspec.info/}} so that in addition to generating the API documentation, API developers can use the same code as functional tests for the API and vice versa, essentially performing ``test driven documentation''. With this setup, when the tests are run, it executes the example API calls and SpyREST automatically generates the API documentation for the \texttt{/notifications} action.
 
 
 \begin{figure}[!tbh]
@@ -387,9 +384,9 @@ The current implementation of SpyREST limits it to be used on JSON based RESTful
 We have used SpyREST to auto generate documentation for APIs sampled from three RESTful API providers\footnote{\url{https://github.com/smsohan/spyrest_examples}}: GitHub.com, KISSMetrics.com, and CakeSide.com and found satisfactory results. Further evaluation is needed in our future work involving RESTful API developers and users to understand and improve the effectiveness of the SpyREST features.
 
 \section{Conclusion}
-In this paper, we have introduced a novel approach for auto generating RESTful API documentation and demonstrated how it can be used to reduce the effort and cost associated with a manual approach to do the same. In addition to the auto generated documentation, SpyREST includes features such as executable example API calls, support for multiple versions, customization and collaboration that are offered both as a shared and self-hosted platforms. These features have been recommended by existing research on the documentation of APIs. In this paper, we have compared SpyREST with existing API documentation tools to show the advantages of using SpyREST over other tools. We have demonstrated using SpyREST with automated test code so the benefits of an automated test and an updated API documentation can be realized from a single code base. Overall, based on the outcome of our work on SpyREST, we conclude that a proxy server based approach shows a pragmatic solution to the RESTful API documentation problem.
+In this paper, we have introduced a novel approach of using a HTTP proxy server to auto generate RESTful API documentation. With SpyREST, we have demonstrated how this new approach can be used to reduce the effort and cost associated with a manual approach to do the same. In addition to the auto generated documentation, SpyREST includes features such as executable example API calls, support for multiple versions, customization and collaboration that are offered both as a shared and self-hosted platforms. These features have been recommended by existing research on the documentation of APIs. In this paper, we have compared SpyREST with existing API documentation tools to show the advantages of using SpyREST over other tools and manual approaches for documenting RESTful APIs. We have demonstrated using SpyREST with automated test code so the benefits of an automated test and an updated API documentation can be realized from a single code base. Overall, based on the outcome of our work on SpyREST, we conclude that a proxy server based approach shows a pragmatic solution to the RESTful API documentation problem.
 
-In our future work, we want to perform and report a user study involving developers and users of RESTful APIs to find out the strengths and shortcomings of SpyREST compared to the existing solutions. In addition to incorporating the feedback collected from the user study, we also want to continue our research on evolution of RESTful APIs so that SpyREST can be enhanced to better support the documentation needs of evolving APIs.
+In our future work, we want to perform and report a user study involving developers and users of RESTful APIs to find out the strengths and shortcomings of SpyREST compared to the existing solutions. In addition to incorporating the feedback collected from the user study, we also want to continue our research on evolution of RESTful APIs so that SpyREST can be enhanced to better support the documentation needs for RESTful APIs that evolve.
 
 \section*{Acknowledgment}
 \small
