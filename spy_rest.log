@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  5 MAY 2015 15:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  5 MAY 2015 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,28 +493,21 @@ File: spyrest_examples.png Graphic file (type png)
 <use spyrest_examples.png>
 Package pdftex.def Info: spyrest_examples.png used on input line 187.
 (pdftex.def)             Requested size: 262.04987pt x 325.5979pt.
- [4 <./components.pdf> <./data_model.png>] [5 <./spyrest_header.png> <./spyrest
-_examples.png>]
-Underfull \hbox (badness 5970) in paragraph at lines 219--220
-[]\OT1/ptm/m/n/10 Fig 3[] shows screen shots (con-tent and pre-sen-ta-
- []
+ [4 <./components.pdf> <./data_model.png>]
+Underfull \vbox (badness 1394) has occurred while \output is active []
 
-
-Underfull \hbox (badness 5345) in paragraph at lines 219--220
-\OT1/ptm/m/n/10 gen-er-ated doc-u-men-ta-tion solely based on an ex-am-ple
- []
-
+ [5 <./spyrest_header.png> <./spyrest_examples.png>]
 <curl.png, id=34, 601.24625pt x 216.81pt>
 File: curl.png Graphic file (type png)
  <use curl.png>
 Package pdftex.def Info: curl.png used on input line 231.
 (pdftex.def)             Requested size: 253.04987pt x 91.25145pt.
- [6 <./curl.png>]
-Overfull \hbox (10.69345pt too wide) in paragraph at lines 242--258
+
+Overfull \hbox (10.69345pt too wide) in paragraph at lines 240--256
 [][]
  []
 
-<edit.png, id=39, 340.27126pt x 320.19624pt>
+[6 <./curl.png>] <edit.png, id=39, 340.27126pt x 320.19624pt>
 File: edit.png Graphic file (type png)
  <use edit.png>
 Package pdftex.def Info: edit.png used on input line 265.
@@ -541,13 +534,13 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2004/09/05 1.3 listings language file
-)
+) [7 <./edit.png> <./preview.png> <./comments.png>]
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 300.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [7 <./edit.png> <./preview.png> <./comments.png>]
+)
 LaTeX Font Info:    Try loading font information for OML+ptm on input line 301.
 
 
@@ -585,15 +578,23 @@ File: notification_example.png Graphic file (type png)
 <use notification_example.png>
 Package pdftex.def Info: notification_example.png used on input line 336.
 (pdftex.def)             Requested size: 253.04987pt x 245.15714pt.
- [8 <./notifications_query.png> <./notification_example.png>] [9] (./spy_rest.b
-bl
+ [8 <./notifications_query.png> <./notification_example.png>]
+Underfull \hbox (badness 1728) in paragraph at lines 360--361
+[]\OT1/ptm/m/n/10 To sum-ma-rize, from our ex-am-ple im-ple-men-ta-tion of
+ []
+
+
+Underfull \vbox (badness 5802) has occurred while \output is active []
+
+ [9]
+(./spy_rest.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-)
+[10])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -605,28 +606,30 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[10] (./spy_rest.aux) ) 
+[11
+
+] (./spy_rest.aux) ) 
 Here is how much of TeX's memory you used:
- 6051 strings out of 493488
- 93715 string characters out of 3141326
- 210171 words of memory out of 3000000
- 9255 multiletter control sequences out of 15000+200000
+ 6052 strings out of 493488
+ 93740 string characters out of 3141326
+ 213422 words of memory out of 3000000
+ 9256 multiletter control sequences out of 15000+200000
  43654 words of font info for 82 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,42p,1721b,1575s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base
-/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (10 pages, 392461 bytes).
+ 38i,12n,42p,1721b,1284s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/f
+onts/type1/urw/times/utmri8a.pfb>
+Output written on spy_rest.pdf (11 pages, 392887 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
