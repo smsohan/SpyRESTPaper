@@ -23,131 +23,105 @@
 
 \bibitem{Fielding_rest}
 R.~T. Fielding, ``Architectural styles and the design of network-based software
-  architectures,'' Ph.D. dissertation, 2000.
+  architectures,'' Ph.D. dissertation, University of California, Irvine, 2000.
 
 \bibitem{Robillard_what_makes}
-M.~Robillard, ``What makes apis hard to learn? the answers of developers,''
+M.~Robillard, ``What makes {API}s hard to learn? the answers of developers,''
   \emph{Software, IEEE}, vol.~PP, no.~99, pp. 1--1, 2011.
 
 \bibitem{Robillard_a_field_study}
-\BIBentryALTinterwordspacing
-M.~Robillard and R.~DeLine, ``\BIBforeignlanguage{English}{A field study of api
-  learning obstacles},'' \emph{\BIBforeignlanguage{English}{Empirical Software
-  Engineering}}, vol.~16, no.~6, pp. 703--732, 2011. [Online]. Available:
-  \url{http://dx.doi.org/10.1007/s10664-010-9150-8}
-\BIBentrySTDinterwordspacing
+M.~Robillard and R.~DeLine, ``\BIBforeignlanguage{English}{A field study of
+  {API} learning obstacles},'' \emph{\BIBforeignlanguage{English}{Empirical
+  Software Engineering}}, vol.~16, no.~6, pp. 703--732, 2011.
 
 \bibitem{Kuhn_on_designing}
-A.~Kuhn and R.~DeLine, ``On designing better tools for learning apis,'' in
+A.~Kuhn and R.~DeLine, ``On designing better tools for learning {API}s,'' in
   \emph{Search-Driven Development - Users, Infrastructure, Tools and Evaluation
-  (SUITE), 2012 ICSE Workshop on}, June 2012, pp. 27--30.
+  (SUITE), 2012 ICSE Workshop on}, 2012, pp. 27--30.
 
 \bibitem{Hoffman_api_documentation}
-\BIBentryALTinterwordspacing
-D.~Hoffman and P.~Strooper, ``\{API\} documentation with executable examples,''
+D.~Hoffman and P.~Strooper, ``{API} documentation with executable examples,''
   \emph{Journal of Systems and Software}, vol.~66, no.~2, pp. 143 -- 156, 2003.
-  [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S0164121202000559}
-\BIBentrySTDinterwordspacing
 
 \bibitem{Nasehi_what_makes}
-\BIBentryALTinterwordspacing
 S.~M. Nasehi, J.~Sillito, F.~Maurer, and C.~Burns, ``What makes a good code
-  example?: {A} study of programming q{\&}a in stackoverflow,'' in \emph{28th
-  {IEEE} International Conference on Software Maintenance, {ICSM} 2012, Trento,
-  Italy, September 23-28, 2012}, 2012, pp. 25--34. [Online]. Available:
-  \url{http://doi.ieeecomputersociety.org/10.1109/ICSM.2012.6405249}
-\BIBentrySTDinterwordspacing
+  example?: {A} study of programming {Q}{\&}{A} in {StackOverflow},'' in
+  \emph{{IEEE} International Conference on Software Maintenance}, 2012, pp.
+  25--34.
 
 \bibitem{Parnin_measuring}
-\BIBentryALTinterwordspacing
-C.~Parnin and C.~Treude, ``Measuring api documentation on the web,'' in
-  \emph{Proceedings of the 2Nd International Workshop on Web 2.0 for Software
-  Engineering}, ser. Web2SE '11.\hskip 1em plus 0.5em minus 0.4em\relax New
-  York, NY, USA: ACM, 2011, pp. 25--30. [Online]. Available:
-  \url{http://doi.acm.org/10.1145/1984701.1984706}
-\BIBentrySTDinterwordspacing
+C.~Parnin and C.~Treude, ``Measuring {API} documentation on the web,'' in
+  \emph{Proceedings of the International Workshop on Web 2.0 for Software
+  Engineering}, ser. Web2SE '11.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
+  2011, pp. 25--30.
 
 \bibitem{Chen_who_asked}
-\BIBentryALTinterwordspacing
 C.~Chen and K.~Zhang, ``Who asked what: Integrating crowdsourced faqs into api
-  documentation,'' in \emph{Companion Proceedings of the 36th International
+  documentation,'' in \emph{Companion Proceedings of the International
   Conference on Software Engineering}, ser. ICSE Companion 2014.\hskip 1em plus
-  0.5em minus 0.4em\relax New York, NY, USA: ACM, 2014, pp. 456--459. [Online].
-  Available: \url{http://doi.acm.org/10.1145/2591062.2591128}
-\BIBentrySTDinterwordspacing
+  0.5em minus 0.4em\relax ACM, 2014, pp. 456--459.
 
 \bibitem{Subramanian_live}
-\BIBentryALTinterwordspacing
 S.~Subramanian, L.~Inozemtseva, and R.~Holmes, ``Live api documentation,'' in
-  \emph{Proceedings of the 36th International Conference on Software
-  Engineering}, ser. ICSE 2014.\hskip 1em plus 0.5em minus 0.4em\relax New
-  York, NY, USA: ACM, 2014, pp. 643--652. [Online]. Available:
-  \url{http://doi.acm.org/10.1145/2568225.2568313}
-\BIBentrySTDinterwordspacing
+  \emph{Proceedings of the International Conference on Software Engineering},
+  ser. ICSE 2014.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2014, pp.
+  643--652.
 
 \bibitem{Stepalina_saas}
-E.~Stepalina, ``Saas support in software documentation systems,'' in
+E.~Stepalina, ``{SaaS} support in software documentation systems,'' in
   \emph{Software Engineering Conference (CEE-SECR), 2010 6th Central and
-  Eastern European}, Oct 2010, pp. 192--197.
+  Eastern European}, 2010, pp. 192--197.
 
 \bibitem{Jadeite}
-\BIBentryALTinterwordspacing
-J.~Stylos, B.~A. Myers, and Z.~Yang, ``Jadeite: Improving api documentation
+J.~Stylos, B.~A. Myers, and Z.~Yang, ``Jadeite: Improving {API} documentation
   using usage information,'' in \emph{CHI '09 Extended Abstracts on Human
   Factors in Computing Systems}, ser. CHI EA '09.\hskip 1em plus 0.5em minus
-  0.4em\relax New York, NY, USA: ACM, 2009, pp. 4429--4434. [Online].
-  Available: \url{http://doi.acm.org/10.1145/1520340.1520678}
-\BIBentrySTDinterwordspacing
+  0.4em\relax ACM, 2009, pp. 4429--4434.
 
 \bibitem{Maleshkova_investigating}
 M.~Maleshkova, C.~Pedrinaci, and J.~Domingue, ``Investigating web {APIs} on the
-  world wide web,'' 2010, pp. 107--114.
+  world wide web,'' in \emph{Proc. of European Conference on Web Services
+  (ECOWS)}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, 2010, pp. 107--114.
 
 \bibitem{Espinha_web}
 T.~Espinha, A.~Zaidman, and H.-G. Gross, ``Web {API} growing pains: Stories
-  from client developers and their code,'' 2014, pp. 84--93.
+  from client developers and their code,'' in \emph{Proc. of Conference on
+  Software Maintenance, Reengineering and Reverse Engineering
+  (CSMR-WCRE)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2014, pp. 84--93.
 
 \bibitem{Danielsen_validation}
-P.~Danielsen and A.~Jeffrey, ``Validation and interactivity of web api
-  documentation,'' in \emph{Web Services (ICWS), 2013 IEEE 20th International
-  Conference on}, June 2013, pp. 523--530.
+P.~Danielsen and A.~Jeffrey, ``Validation and interactivity of web {API}
+  documentation,'' in \emph{International Conference on Web Services}.\hskip
+  1em plus 0.5em minus 0.4em\relax IEEE, 2013, pp. 523--530.
 
 \bibitem{Verborgh_functional}
-\BIBentryALTinterwordspacing
 R.~Verborgh, T.~Steiner, D.~Van~Deursen, S.~Coppens, J.~G. Vall{\'e}s, and
   R.~Van~de Walle, ``Functional descriptions as the bridge between hypermedia
-  apis and the semantic web,'' in \emph{Proceedings of the Third International
-  Workshop on RESTful Design}, ser. WS-REST '12.\hskip 1em plus 0.5em minus
-  0.4em\relax New York, NY, USA: ACM, 2012, pp. 33--40. [Online]. Available:
-  \url{http://doi.acm.org/10.1145/2307819.2307828}
-\BIBentrySTDinterwordspacing
+  {API}s and the semantic web,'' in \emph{Proceedings of the Third
+  International Workshop on RESTful Design}, ser. WS-REST '12.\hskip 1em plus
+  0.5em minus 0.4em\relax ACM, 2012, pp. 33--40.
 
 \bibitem{Mangler_rddl}
 J.~Mangler, P.~Beran, and E.~Schikuta, ``On the origin of services using riddl
   for description, evolution and composition of restful services,'' in
-  \emph{Cluster, Cloud and Grid Computing (CCGrid), 2010 10th IEEE/ACM
-  International Conference on}, May 2010, pp. 505--508.
+  \emph{Cluster, Cloud and Grid Computing (CCGrid), IEEE/ACM International
+  Conference on}, 2010, pp. 505--508.
 
 \bibitem{Kopecky_hrests}
 J.~Kopecky, K.~Gomadam, and T.~Vitvar, ``hrests: An html microformat for
   describing restful web services,'' in \emph{Proc. of International Conference
-  on Web Intelligence and Intelligent Agent Technology (WI-IAT)}, vol.~1, 2008,
-  pp. 619--625.
+  on Web Intelligence and Intelligent Agent Technology (WI-IAT)}, vol.~1.\hskip
+  1em plus 0.5em minus 0.4em\relax {IEEE}, 2008, pp. 619--625.
 
 \bibitem{Ning_omnivoke}
 N.~Li, C.~Pedrinaci, M.~Maleshkova, J.~Kopecky, and J.~Domingue, ``Omnivoke: A
-  framework for automating the invocation of web apis,'' in \emph{Semantic
-  Computing (ICSC), 2011 Fifth IEEE International Conference on}, Sept 2011,
-  pp. 39--46.
+  framework for automating the invocation of web apis,'' in \emph{IEEE
+  International Conference on Semantic Computing}, 2011, pp. 39--46.
 
 \bibitem{Myers_study}
-\BIBentryALTinterwordspacing
 B.~A. Myers, S.~Y. Jeong, Y.~Xie, J.~Beaton, J.~Stylos, R.~Ehret, J.~Karstens,
   A.~Efeoglu, and D.~K. Busse, ``Studying the documentation of an api for
   enterprise service-oriented architecture,'' \emph{J. Organ. End User
-  Comput.}, vol.~22, no.~1, pp. 23--51, Jan. 2010. [Online]. Available:
-  \url{http://dx.doi.org/10.4018/joeuc.2010101903}
-\BIBentrySTDinterwordspacing
+  Comput.}, vol.~22, no.~1, pp. 23--51, 2010.
 
 \end{thebibliography}

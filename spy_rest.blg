@@ -7,67 +7,55 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: references.bib
-Warning--string name "ieee" is undefined
---line 276 of file references.bib
-Warning--string name "csmr" is undefined
---line 283 of file references.bib
-Warning--string name "ieee" is undefined
---line 290 of file references.bib
-Warning--string name "ecows" is undefined
---line 295 of file references.bib
-Warning--string name "ieee" is undefined
---line 302 of file references.bib
+Database file #1: IEEEabrv.bib
+Database file #2: references.bib
 A bad cross reference---entry "Nasehi_what_makes"
 refers to entry "DBLP:conf/icsm/2012", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/icsm/2012"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--missing school in Fielding_rest
-Warning--empty booktitle in Maleshkova_investigating
-Warning--empty booktitle in Espinha_web
 
 Done.
 You've used 19 entries,
             4024 wiz_defined-function locations,
-            958 strings with 11792 characters,
-and the built_in function-call counts, 16641 in all, are:
-= -- 1319
+            1326 strings with 18598 characters,
+and the built_in function-call counts, 16402 in all, are:
+= -- 1283
 > -- 363
 < -- 146
 + -- 206
 - -- 57
-* -- 842
-:= -- 2431
-add.period$ -- 43
+* -- 790
+:= -- 2340
+add.period$ -- 47
 call.type$ -- 19
 change.case$ -- 19
 chr.to.int$ -- 357
-cite$ -- 22
-duplicate$ -- 1158
-empty$ -- 1407
+cite$ -- 19
+duplicate$ -- 1162
+empty$ -- 1418
 format.name$ -- 73
-if$ -- 3885
+if$ -- 3861
 int.to.chr$ -- 0
 int.to.str$ -- 19
-missing$ -- 202
-newline$ -- 98
+missing$ -- 203
+newline$ -- 80
 num.names$ -- 19
-pop$ -- 472
+pop$ -- 477
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1280
+skip$ -- 1281
 stack$ -- 0
 substring$ -- 852
-swap$ -- 963
+swap$ -- 949
 text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 19
-warning$ -- 3
+warning$ -- 0
 while$ -- 80
 width$ -- 21
-write$ -- 231
+write$ -- 207
 (There was 1 error message)
