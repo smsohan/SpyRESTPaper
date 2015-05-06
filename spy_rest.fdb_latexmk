@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex spy_rest"] 1430892045 "spy_rest.aux" "spy_rest.bbl" "spy_rest" 1430892047
+["bibtex spy_rest"] 1430929328 "spy_rest.aux" "spy_rest.bbl" "spy_rest" 1430929354
   "./IEEEtran.bst" 1168506946 59215 bc5380b3434a66b895bbc75d3d380540 ""
   "IEEEabrv.bib" 1430891971 17799 fedf5021f21d0a738fee125e764ce814 ""
   "references.bib" 1430891903 23435 600e7b756473b7801feea8f0e49123ff ""
-  "spy_rest.aux" 1430892047 4680 daaf7cd4afd5a839b57ccd2353b0b7db ""
+  "spy_rest.aux" 1430929354 4680 c2f9ceb4cc7c432b820a22b342ed9925 ""
   "spy_rest.bcf" 0 -1 0 ""
   (generated)
-  "spy_rest.blg"
   "spy_rest.bbl"
-["pdflatex"] 1430892046 "spy_rest.tex" "spy_rest.pdf" "spy_rest" 1430892047
+  "spy_rest.blg"
+["pdflatex"] 1430929352 "spy_rest.tex" "spy_rest.pdf" "spy_rest" 1430929354
   "/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -56,20 +56,19 @@
   "/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty" 1264379145 21932 e3a9cf32ee9b853b42be14c2f25b873c ""
   "IEEEtran.cls" 1354044732 207390 d653df0f34cc52792528fb4a3b56093b ""
   "comments.png" 1430343472 60543 4cf3b91457bf5b2a35ded6f6a70c2239 ""
-  "components.pdf" 1430285512 1083 decf0eddabac5eff28636c78e809f798 ""
-  "components.pdf_tex" 1430285512 2138 393f0dc0c888d06c32c9501bed2508b6 ""
   "curl.png" 1430333599 49531 4e64363bc10e348502d79e33048abe01 ""
   "data_model.png" 1430407252 38624 91eca36595d6492c88c16da873375bba ""
   "edit.png" 1430339992 44522 cc57547fbe40301b46167551af655a4e ""
   "notification_example.png" 1430458091 73194 e43edab4df822a2dce9663c0086cd42e ""
   "notifications_query.png" 1430456984 41892 6720ed2a18bde4f20fe4456d31222f63 ""
   "preview.png" 1430339807 36829 cff85577562d26d1760190f8fd1841b9 ""
-  "spy_rest.aux" 1430892047 4680 daaf7cd4afd5a839b57ccd2353b0b7db ""
-  "spy_rest.bbl" 1430892046 5877 4dc2001bb45257fefe4eb2ffd6ea394c "bibtex spy_rest"
-  "spy_rest.tex" 1430892043 53506 6b744aa615fedfd74bad40a7b7aa83c5 ""
+  "spy_rest.aux" 1430929354 4680 c2f9ceb4cc7c432b820a22b342ed9925 ""
+  "spy_rest.bbl" 1430929328 5877 4dc2001bb45257fefe4eb2ffd6ea394c "bibtex spy_rest"
+  "spy_rest.tex" 1430929352 53702 2ecc54b7956988076c88f86e192aee36 ""
+  "spyrest_components.png" 1430929169 20296 91df692ec00a539356c6a780fd3a6633 ""
   "spyrest_examples.png" 1430324997 91140 9aaf9c2757d8aacd54ab5b0e66cf45e2 ""
   "spyrest_header.png" 1430324191 66634 3061e659708bd75e68a0c4afcb166699 ""
   (generated)
-  "spy_rest.aux"
   "spy_rest.pdf"
   "spy_rest.log"
+  "spy_rest.aux"

@@ -114,12 +114,20 @@ The following list of requirements for SpyREST, R1-7 in priority order, is deriv
 From our research to meet the requirements R1-7, we have identified an HTTP proxy server based solution as a novel approach for generating RESTful API documentation. A possible implementation and the related advantages of the HTTP proxy server based approach is demonstrated through SpyREST. SpyREST is composed of three main components as shown in Fig. \ref{fig:components}.
 
 \begin{figure}[htb]
-\centering
-\def\svgwidth{\linewidth}
-\input{components.pdf_tex}
-\caption{SpyREST Component Diagram}
-\label{fig:components}
+  \centering
+  \includegraphics[width=\linewidth]{spyrest_components.png}
+  \caption{SpyREST Component Diagram}
+  \label{fig:components}
 \end{figure}
+
+
+% \begin{figure}[htb]
+% \centering
+% \def\svgwidth{\linewidth}
+% \input{components.pdf_tex}
+% \caption{SpyREST Component Diagram}
+% \label{fig:components}
+% \end{figure}
 
 \textbf{The Spy:} SpyREST is driven by example calls to the RESTful APIs to generate the documentation for the APIs. The Spy component in SpyREST is an HTTP proxy server. The Spy is named so because it records the HTTP traffic for example API calls that are made using it as a proxy server. For example, when using Spy as an HTTP proxy to make the following HTTP request:
 
@@ -166,15 +174,16 @@ Spy automatically saves the raw request and response data with HTTP headers. Add
 \end{tabular}
 \normalsize
 
-
-As shown in this example, the version ``v3'' is automatically detected by parsing the accept request header. The automatic version detection algorithm can extract version information from either the request URL or accept header for most commonly used formats. Next, the resource field is also auto detected as ``repositories'' by parsing the request URL. The action ``GET /repositories'' is automatically detected by combining the request HTTP method with request path. The strippedResponseBody field automatically saves a shorter version of the actual response where large arrays in the response body are recursively truncated to smaller arrays with two sample items to reduce noise from the generated documentation. These meta fields allow SpyREST to structure the example API calls for a given API host in a hierarchical model as follows: an APIHost (e.g. GitHub.com) has many APIVersions (e.g. v3), each APIVersion has many APIResources (e.g. repositories), each APIResource has many APIActions (e.g. GET /repositories), and each APIAction has many APIExamples. An API developer can sign up for a SpyREST user account to feed data to the Spy. The User object stores the SpyREST user account information. Fig. \ref{fig:data_model} shows a simplified UML diagram of SpyREST's data model.
-
 \begin{figure}[!tbh]
   \centering
   \includegraphics[width=\linewidth]{data_model.png}
   \caption{SpyREST data model}
   \label{fig:data_model}
 \end{figure}
+
+
+As shown in this example, the version ``v3'' is automatically detected by parsing the accept request header. The automatic version detection algorithm can extract version information from either the request URL or accept header for most commonly used formats. Next, the resource field is also auto detected as ``repositories'' by parsing the request URL. The action ``GET /repositories'' is automatically detected by combining the request HTTP method with request path. The strippedResponseBody field automatically saves a shorter version of the actual response where large arrays in the response body are recursively truncated to smaller arrays with two sample items to reduce noise from the generated documentation. These meta fields allow SpyREST to structure the example API calls for a given API host in a hierarchical model as follows: an APIHost (e.g. GitHub.com) has many APIVersions (e.g. v3), each APIVersion has many APIResources (e.g. repositories), each APIResource has many APIActions (e.g. GET /repositories), and each APIAction has many APIExamples. An API developer can sign up for a SpyREST user account to feed data to the Spy. The User object stores the SpyREST user account information. Fig. \ref{fig:data_model} shows a simplified UML diagram of SpyREST's data model.
+
 
 \begin{figure*}[!tbh]
   \centering
