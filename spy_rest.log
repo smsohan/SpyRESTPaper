@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  11 MAY 2015 13:54
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  11 MAY 2015 14:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -472,54 +472,54 @@ File: spyrest_components.png Graphic file (type png)
 Package pdftex.def Info: spyrest_components.png used on input line 118.
 (pdftex.def)             Requested size: 253.04987pt x 160.92468pt.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
  <data_model.png, id=19, 525.965pt x 574.145pt>
 File: data_model.png Graphic file (type png)
 
 <use data_model.png>
-Package pdftex.def Info: data_model.png used on input line 179.
+Package pdftex.def Info: data_model.png used on input line 178.
 (pdftex.def)             Requested size: 253.04987pt x 276.23476pt.
 
-Underfull \vbox (badness 4660) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 <spyrest_header.png, id=20, 429.605pt x 670.505pt>
 File: spyrest_header.png Graphic file (type png)
  <use spyrest_header.png>
-Package pdftex.def Info: spyrest_header.png used on input line 191.
+Package pdftex.def Info: spyrest_header.png used on input line 190.
 (pdftex.def)             Requested size: 209.63669pt x 327.18959pt.
 
 <spyrest_examples.png, id=21, 600.2425pt x 745.78625pt>
 File: spyrest_examples.png Graphic file (type png)
 
 <use spyrest_examples.png>
-Package pdftex.def Info: spyrest_examples.png used on input line 196.
+Package pdftex.def Info: spyrest_examples.png used on input line 195.
 (pdftex.def)             Requested size: 262.04987pt x 325.5979pt.
  [4 <./spyrest_components.png> <./data_model.png>]
 [5 <./spyrest_header.png> <./spyrest_examples.png>]
 <curl.png, id=33, 601.24625pt x 216.81pt>
 File: curl.png Graphic file (type png)
  <use curl.png>
-Package pdftex.def Info: curl.png used on input line 234.
+Package pdftex.def Info: curl.png used on input line 233.
 (pdftex.def)             Requested size: 253.04987pt x 91.25145pt.
 
-Overfull \hbox (10.69345pt too wide) in paragraph at lines 243--259
+Overfull \hbox (10.69345pt too wide) in paragraph at lines 242--258
 [][]
  []
 
 <edit.png, id=34, 340.27126pt x 320.19624pt>
 File: edit.png Graphic file (type png)
  <use edit.png>
-Package pdftex.def Info: edit.png used on input line 266.
+Package pdftex.def Info: edit.png used on input line 265.
 (pdftex.def)             Requested size: 126.52493pt x 119.06192pt.
 
 <preview.png, id=35, 439.6425pt x 317.185pt>
 File: preview.png Graphic file (type png)
  <use preview.png>
-Package pdftex.def Info: preview.png used on input line 270.
+Package pdftex.def Info: preview.png used on input line 269.
 (pdftex.def)             Requested size: 113.87166pt x 82.15155pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--271
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
 []\OT1/ptm/m/n/9 (b) |Pre-view-ing cus-tomized
  []
 
@@ -527,7 +527,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--271
 File: comments.png Graphic file (type png)
 
 <use comments.png>
-Package pdftex.def Info: comments.png used on input line 283.
+Package pdftex.def Info: comments.png used on input line 282.
 (pdftex.def)             Requested size: 253.04987pt x 193.42155pt.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -536,27 +536,26 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 )
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 302.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 301.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 303.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 302.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 303.
- [7 <./edit.png> <./preview.png> <./comments.png>]
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 302.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 324.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+) [7 <./edit.png> <./preview.png> <./comments.png>]
 <notifications_query.png, id=49, 434.62375pt x 281.05pt>
 File: notifications_query.png Graphic file (type png)
 
@@ -564,14 +563,14 @@ File: notifications_query.png Graphic file (type png)
 Package pdftex.def Info: notifications_query.png used on input line 329.
 (pdftex.def)             Requested size: 253.04987pt x 163.63951pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
-\OT1/pcr/m/n/10 api.github.com > v3 > notifications > GET
+Underfull \hbox (badness 2261) in paragraph at lines 334--335
+[]\OT1/ptm/m/n/10 Fig. 7[] shows a screen shot of the auto gen-er-ated
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 334--335
-\OT1/pcr/m/n/10 /notifications \OT1/ptm/m/n/10 API ac-tion. This ta-ble merges 
-the
+Underfull \hbox (badness 1810) in paragraph at lines 334--335
+\OT1/ptm/m/n/10 sum-mary ta-ble for the URL query pa-ram-e-ters of \OT1/pcr/m/n
+/10 GET
  []
 
 <notification_example.png, id=50, 482.80376pt x 467.7475pt>
@@ -596,52 +595,10 @@ Underfull \hbox (badness 2460) in paragraph at lines 350--351
 \OT1/ptm/m/n/10 tion the fields \OT1/pcr/m/n/10 workspaces, last_workspace_id,
  []
 
-[8 <./notifications_query.png> <./notification_example.png>]
-! You can't use `macro parameter character #' in horizontal mode.
-l.355 ...oud/chef/blob/master/environments/amp.rb#
-                                                  L130xy server based soluti...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 1748) in paragraph at lines 355--356
-[]\OT1/ptm/m/n/10 RESTful API doc-u-men-ta-tion is ex-pen-sive and error-
- []
-
-
-Underfull \hbox (badness 5064) in paragraph at lines 355--356
-\OT1/ptm/m/n/10 prone be-cause of the man-ual ef-fort in-volved in the
- []
-
-
-Underfull \hbox (badness 5607) in paragraph at lines 355--356
-\OT1/ptm/m/n/10 an HTTP proxy server is used to largely au-to-mate
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
-\OT1/ptm/m/n/10 the pro-cess for REST-ful API doc-u-men-ta-tion. There
- []
-
-
-Underfull \hbox (badness 2495) in paragraph at lines 355--356
-\OT1/ptm/m/n/10 is a lack of tool sup-port for au-to-mat-i-cally gen-er-at-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
-\OT1/ptm/m/n/10 as an ex-am-ple im-ple-men-ta-tion of the HTTP pro-
- []
-
-
-Overfull \hbox (100.40622pt too wide) in paragraph at lines 355--356
-\OT1/ptm/m/n/10 https://code.engine.sourcefire.com/Cloud/chef/blob/master/envir
-onments/amp.rbL130xy
- []
-
-[9]
+ [8 <./notifications_query.png> <./notification_example.png>] [9]
 Underfull \hbox (badness 1728) in paragraph at lines 367--368
 []\OT1/ptm/m/n/10 To sum-ma-rize, from our ex-am-ple im-ple-men-ta-tion of
  []
@@ -669,13 +626,13 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./spy_rest.aux) ) 
 Here is how much of TeX's memory you used:
- 6047 strings out of 493488
- 93751 string characters out of 3141326
- 192939 words of memory out of 3000000
- 9254 multiletter control sequences out of 15000+200000
+ 6048 strings out of 493488
+ 93767 string characters out of 3141326
+ 217218 words of memory out of 3000000
+ 9255 multiletter control sequences out of 15000+200000
  43654 words of font info for 82 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,42p,1721b,1585s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,42p,1721b,1353s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r
 .enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
 fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
@@ -685,7 +642,7 @@ cal/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
 e/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (11 pages, 405195 bytes).
+Output written on spy_rest.pdf (11 pages, 404539 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream
