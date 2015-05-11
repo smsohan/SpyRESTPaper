@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex spy_rest"] 1430929712 "spy_rest.aux" "spy_rest.bbl" "spy_rest" 1430929937
+["bibtex spy_rest"] 1431372052 "spy_rest.aux" "spy_rest.bbl" "spy_rest" 1431372054
   "./IEEEtran.bst" 1168506946 59215 bc5380b3434a66b895bbc75d3d380540 ""
   "IEEEabrv.bib" 1430891971 17799 fedf5021f21d0a738fee125e764ce814 ""
   "references.bib" 1430891903 23435 600e7b756473b7801feea8f0e49123ff ""
-  "spy_rest.aux" 1430929936 4680 377c3449f2347283f0ac5ae960020f83 ""
+  "spy_rest.aux" 1431372053 4715 41ffd6b69b0ba0d25ee8d49cf2f16e89 ""
   "spy_rest.bcf" 0 -1 0 ""
   (generated)
   "spy_rest.bbl"
   "spy_rest.blg"
-["pdflatex"] 1430929935 "spy_rest.tex" "spy_rest.pdf" "spy_rest" 1430929937
+["pdflatex"] 1431372052 "spy_rest.tex" "spy_rest.pdf" "spy_rest" 1431372054
   "/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -62,13 +62,13 @@
   "notification_example.png" 1430458091 73194 e43edab4df822a2dce9663c0086cd42e ""
   "notifications_query.png" 1430456984 41892 6720ed2a18bde4f20fe4456d31222f63 ""
   "preview.png" 1430339807 36829 cff85577562d26d1760190f8fd1841b9 ""
-  "spy_rest.aux" 1430929936 4680 377c3449f2347283f0ac5ae960020f83 ""
-  "spy_rest.bbl" 1430929713 5877 4dc2001bb45257fefe4eb2ffd6ea394c "bibtex spy_rest"
-  "spy_rest.tex" 1430929934 53704 0a927858bb91828a18bf57e453fbab99 ""
+  "spy_rest.aux" 1431372053 4715 41ffd6b69b0ba0d25ee8d49cf2f16e89 ""
+  "spy_rest.bbl" 1431372052 5877 4dc2001bb45257fefe4eb2ffd6ea394c "bibtex spy_rest"
+  "spy_rest.tex" 1431372050 53501 3073272ab388e2b304310048ea7acbde ""
   "spyrest_components.png" 1430929169 20296 91df692ec00a539356c6a780fd3a6633 ""
   "spyrest_examples.png" 1430324997 91140 9aaf9c2757d8aacd54ab5b0e66cf45e2 ""
   "spyrest_header.png" 1430324191 66634 3061e659708bd75e68a0c4afcb166699 ""
   (generated)
   "spy_rest.aux"
-  "spy_rest.pdf"
   "spy_rest.log"
+  "spy_rest.pdf"
