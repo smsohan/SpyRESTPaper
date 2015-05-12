@@ -83,7 +83,7 @@ In addition to the research community, there are several RESTful API specificati
 \section{SpyREST} % (fold)
 \label{sec:spyrest}
 
-\subsection{SpyREST Requirements} % (fold)
+\subsection{Requirements} % (fold)
 \label{sub:spyrest_requirements}
 
 The following list of requirements for SpyREST, R1-7 in priority order, is derived from analyzing the aforementioned related work and current API documentation practices as observed in the industry:
@@ -110,7 +110,7 @@ The following list of requirements for SpyREST, R1-7 in priority order, is deriv
   \textbf{R7 - Collaborative}: SpyREST needs to allow people to collaborate on the API documentation so that questions and answers about APIs can coexist with the API documentation. This is required to overcome the knowledge fragmentation problem when API related discussions take place on external forums such as StackOverflow.com outside the API documentation portal \cite{Chen_who_asked}.
 
 
-\subsection{SpyREST Components} % (fold)
+\subsection{Design and Implementation} % (fold)
 From our research, we identified an HTTP proxy server based solution as a novel approach for generating RESTful API documentation meeting requirements R1-7. Our approach works as follows: API developers make example API calls using a proxy $\longrightarrow$ the proxy records and processes HTTP traffic $\longrightarrow$ a web app generates RESTful API documentation. SpyREST, an example implementation of this approach, is composed of three main components as shown in Fig. \ref{fig:components}.
 
 \begin{figure}[htb]
@@ -212,7 +212,7 @@ To record data for an example call to an API that uses a SSL/TLS connection, the
 
 The source code for both the Spy and web app components are released as open source projects. The specific technologies used by SpyREST work as an example implementation of the core technique of using an HTTP proxy server to auto generate RESTful API documentation.
 
-\subsection{SpyREST Features} % (fold)
+\subsection{Features} % (fold)
 
 Now that we have explained the three components of SpyREST and how they work, we discuss how SpyREST meets the aforementioned requirements R1-7.
 
@@ -291,6 +291,11 @@ This panel containing the executable API example is editable on the user interfa
 \label{sec:case_study}
 Now that we have discussed the different features offered by SpyREST, in this section we discuss a case study of using SpyREST. For this case study, we used SpyREST to auto generate documentation for 25 API actions randomly sampled from three RESTful API providers using using 272 lines of code\footnote{\url{https://github.com/smsohan/spyrest_examples}}: GitHub.com, KISSMetrics.com (Online analytics tool), and LiquidPlanner.com (Online project management tool). We illustrate the process with an example usage of SpyREST to auto generate the documentation of one API action from the GitHub API.
 
+\subsection{GitHub Example} % (fold)
+\label{sub:github_example}
+
+% subsection github_example (end)
+
 We start by looking at the manually written notifications list API available at \url{https://developer.github.com/v3/activity/notifications/#list-your-notifications}. Using this API, a GitHub user can fetch notifications about different activities related to their account. To auto-generate the documentation for this API using SpyREST, we need to make some example API calls via the Spy proxy. To make the example API calls, in this demonstration, we use a REST client using a Ruby program as shown in Listing \ref{lst:notifications}.
 
 \lstset{showstringspaces=false, basicstyle=\footnotesize, numbers=left, numbersep=1pt }
@@ -344,7 +349,7 @@ In addition to showing the structure of the API objects, SpyREST displays the ac
 
 In this case study, we have shown how a total of 24 lines of executable test code, has been used to auto-generate the documentation of the \texttt{/notifications} action for the Github API. We consider the effort required for writing the test code to be simpler than the effort that'd be required to manually write an API documentation by looking at the content and presentation of the auto generated documentation.
 
-\subsection{SpyREST vs Official Documentation} % (fold)
+\subsection{SpyREST Documentation vs. Official Documentation} % (fold)
 \label{sub:spyrest_vs_official_documentation}
 
 We found SpyREST generated documentation for 5 of the 25 API actions from the case study included fields that are found from actual API responses but not included in their official documentation. For example, the SpyREST generated documentation for Github \texttt{GET /notifications} API action included 34 additional fields, such as: \texttt{forks\_url, keys\_url, collaborators\_url, and 29 more} that were not mentioned in the official API documentation even though actually returned as API response. Similarly, the official documentation for GitHub.com \texttt{GET /search/code} API action did not include the \texttt{releases\_url} API response field. Official documentation of KISSMetrics.com \texttt{GET core/accounts} and \texttt{GET core/accounts/:account\_id} API actions did not mention the \texttt{data} field that is found in the actual response as documented by SpyREST. The official documentation for \texttt{GET /api/account} action on LiquidPlanner.com did not mention the fields \texttt{workspaces, last\_workspace\_id, and disabled\_workspaces\_count} that were included in the SpyREST documentation. These examples show the error-prone nature of a manual process that requires API developers to ensure the documentation is updated to reflect any change in the API. We consider the proxy based solution to solve this problem since the API documentation can be updated by replaying the example API calls.
@@ -352,7 +357,7 @@ We found SpyREST generated documentation for 5 of the 25 API actions from the ca
 The official documentation of these three API providers did not include integrated collaboration features. We found 172 unanswered questions out of 662 questions with the tag \texttt{github-api} on StackOverflow.com. We found 123 questions about LiquidPlanner API on their developer forum that are not linked to officially generated documentation published as a PDF file. On StackOverflow.com, we found 4 unanswered questions out of 9 questions on KISSMetrics API. SpyREST provides the collaboration features with auto generated API documentation so that API developers and users can discuss and locate related discussions when browsing RESTful API documentation on a single web interface. SpyREST includes executable API examples, support for multiple versions and presents the auto generated documentation for different RESTful APIs using a consistent look and feel that are not provided by these studied APIs.
 
 \section{Discussion}
-RESTful API documentation is expensive and error-prone because of the manual effort involved in the process. Our core contribution is a novel approach where an HTTP proxy server is used to largely automate the process for RESTful API documentation. There is a lack of tool support for automatically generating documentation of RESTful APIs. We presented SpyREST as an example implementation of the HTTP proxy server based solution to fill this need. SpyREST demonstrates how HTTP proxies can be used to automatically record and synthesize the recorded data from example API calls to provide a pragmatic solution for automatic RESTful API documentation. In Section \ref{sec:case_study}, we demonstrated how using SpyREST to auto generate documentation from executable code can overcome the problems with a manual process.
+RESTful API documentation is expensive, error-prone, and often incomplete because of the manual effort involved in the process. Our core contribution is a novel approach where an HTTP proxy server is used to largely automate the process for RESTful API documentation. There is a lack of tool support for automatically generating documentation of RESTful APIs. We presented SpyREST as an example implementation of the HTTP proxy server based solution to fill this need. SpyREST demonstrates how HTTP proxies can be used to automatically record and synthesize the recorded data from example API calls to provide a pragmatic solution for automatic RESTful API documentation. In Section \ref{sec:case_study}, we demonstrated how using SpyREST to auto generate documentation from executable code can overcome the problems with a manual process.
 
 The requirements for SpyREST are derived from analyzing the existing literature and industry practices as well as our own experiences developing RESTful APIs and their documentation. In the literature, several papers provided lists of recommendations for API documentation based on studying the existing tools and techniques and feedback collected from API developers. We found a lack of available tool support to generate RESTful API documentation following those recommendations and worked on SpyREST to provide a solution. As a result, SpyREST features such as automated documentation with executable examples, customizable contents, collaboration, version awareness and reusability provide a ready to use tool support for RESTful API documentation following the recommendations.
 

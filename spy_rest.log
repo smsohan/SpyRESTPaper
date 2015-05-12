@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 MAY 2015 14:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 MAY 2015 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -538,21 +538,21 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 )
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 301.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 306.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 302.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 307.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 302.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 324.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 307.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 329.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -562,15 +562,15 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 File: notifications_query.png Graphic file (type png)
 
 <use notifications_query.png>
-Package pdftex.def Info: notifications_query.png used on input line 329.
+Package pdftex.def Info: notifications_query.png used on input line 334.
 (pdftex.def)             Requested size: 253.04987pt x 163.63951pt.
 
-Underfull \hbox (badness 2261) in paragraph at lines 334--335
+Underfull \hbox (badness 2261) in paragraph at lines 339--340
 []\OT1/ptm/m/n/10 Fig. 7[] shows a screen shot of the auto gen-er-ated
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 334--335
+Underfull \hbox (badness 1810) in paragraph at lines 339--340
 \OT1/ptm/m/n/10 sum-mary ta-ble for the URL query pa-ram-e-ters of \OT1/pcr/m/n
 /10 GET
  []
@@ -579,87 +579,87 @@ Underfull \hbox (badness 1810) in paragraph at lines 334--335
 File: notification_example.png Graphic file (type png)
 
 <use notification_example.png>
-Package pdftex.def Info: notification_example.png used on input line 338.
+Package pdftex.def Info: notification_example.png used on input line 343.
 (pdftex.def)             Requested size: 253.04987pt x 245.15714pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 doc-u-men-ta-tion for Github \OT1/pcr/m/n/10 GET /notifications
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 API ac-tion in-cluded 34 ad-di-tional fields, such as:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 \OT1/pcr/m/n/10 forks_url, keys_url, collaborators_url,
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 350--351
+Underfull \hbox (badness 1354) in paragraph at lines 355--356
 \OT1/pcr/m/n/10 and 29 more \OT1/ptm/m/n/10 that were not men-tioned in the of-
 fi-cial
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 350--351
+Underfull \hbox (badness 6893) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 API doc-u-men-ta-tion even though ac-tu-ally re-turned as
  []
 
 
-Underfull \hbox (badness 3000) in paragraph at lines 350--351
+Underfull \hbox (badness 3000) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 API re-sponse. Sim-i-larly, the of-fi-cial doc-u-men-ta-tion fo
 r
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 350--351
+Underfull \hbox (badness 3323) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 GitHub.com \OT1/pcr/m/n/10 GET /search/code \OT1/ptm/m/n/10 API
  ac-tion did not
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 and \OT1/pcr/m/n/10 GET core/accounts/:account_id \OT1/ptm/m/n/
 10 API
  []
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 350--351
+Underfull \hbox (badness 1874) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 ac-tions did not men-tion the \OT1/pcr/m/n/10 data \OT1/ptm/m/n
 /10 field that is found
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 350--351
+Underfull \hbox (badness 5862) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 in the ac-tual re-sponse as doc-u-mented by SpyREST.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 The of-fi-cial doc-u-men-ta-tion for \OT1/pcr/m/n/10 GET /api/a
 ccount
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 ac-tion on Liq-uid-Plan-ner.com did not men-tion the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 fields \OT1/pcr/m/n/10 workspaces, last_workspace_id, and
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 350--351
+Underfull \hbox (badness 1755) in paragraph at lines 355--356
 \OT1/ptm/m/n/10 the SpyREST doc-u-men-ta-tion. These ex-am-ples show the
  []
 
 [8 <./notifications_query.png> <./notification_example.png>] [9]
-Underfull \hbox (badness 1728) in paragraph at lines 367--368
+Underfull \hbox (badness 1728) in paragraph at lines 372--373
 []\OT1/ptm/m/n/10 To sum-ma-rize, from our ex-am-ple im-ple-men-ta-tion of
  []
 
@@ -670,7 +670,7 @@ Underfull \hbox (badness 1728) in paragraph at lines 367--368
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-)
+[10])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -682,28 +682,30 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[10] (./spy_rest.aux) ) 
+[11
+
+] (./spy_rest.aux) ) 
 Here is how much of TeX's memory you used:
- 6048 strings out of 493488
- 93767 string characters out of 3141326
- 217021 words of memory out of 3000000
- 9255 multiletter control sequences out of 15000+200000
+ 6049 strings out of 493488
+ 93787 string characters out of 3141326
+ 217249 words of memory out of 3000000
+ 9256 multiletter control sequences out of 15000+200000
  43654 words of font info for 82 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,12n,42p,1550b,1353s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base
-/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (10 pages, 404118 bytes).
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/f
+onts/type1/urw/times/utmri8a.pfb>
+Output written on spy_rest.pdf (11 pages, 404493 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 94 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
