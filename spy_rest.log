@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 MAY 2015 14:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 MAY 2015 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -582,19 +582,80 @@ File: notification_example.png Graphic file (type png)
 Package pdftex.def Info: notification_example.png used on input line 338.
 (pdftex.def)             Requested size: 253.04987pt x 245.15714pt.
 
-Underfull \hbox (badness 2591) in paragraph at lines 350--351
-\OT1/ptm/m/n/10 as: \OT1/pcr/m/n/10 forks_url, keys_url, collaborators_url,
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 doc-u-men-ta-tion for Github \OT1/pcr/m/n/10 GET /notifications
+
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 350--351
-\OT1/pcr/m/n/10 GET /search/code \OT1/ptm/m/n/10 API ac-tion did not in-clude t
-he
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 API ac-tion in-cluded 34 ad-di-tional fields, such as:
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 350--351
-\OT1/ptm/m/n/10 tion the fields \OT1/pcr/m/n/10 workspaces, last_workspace_id,
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+\OT1/pcr/m/n/10 forks_url, keys_url, collaborators_url,
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 350--351
+\OT1/pcr/m/n/10 and 29 more \OT1/ptm/m/n/10 that were not men-tioned in the of-
+fi-cial
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 API doc-u-men-ta-tion even though ac-tu-ally re-turned as
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 API re-sponse. Sim-i-larly, the of-fi-cial doc-u-men-ta-tion fo
+r
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 GitHub.com \OT1/pcr/m/n/10 GET /search/code \OT1/ptm/m/n/10 API
+ ac-tion did not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 and \OT1/pcr/m/n/10 GET core/accounts/:account_id \OT1/ptm/m/n/
+10 API
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 ac-tions did not men-tion the \OT1/pcr/m/n/10 data \OT1/ptm/m/n
+/10 field that is found
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 in the ac-tual re-sponse as doc-u-mented by SpyREST.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 The of-fi-cial doc-u-men-ta-tion for \OT1/pcr/m/n/10 GET /api/a
+ccount
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 ac-tion on Liq-uid-Plan-ner.com did not men-tion the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 fields \OT1/pcr/m/n/10 workspaces, last_workspace_id, and
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 350--351
+\OT1/ptm/m/n/10 the SpyREST doc-u-men-ta-tion. These ex-am-ples show the
  []
 
 [8 <./notifications_query.png> <./notification_example.png>] [9]
@@ -639,7 +700,7 @@ fb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
 live/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (10 pages, 404085 bytes).
+Output written on spy_rest.pdf (10 pages, 404118 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
