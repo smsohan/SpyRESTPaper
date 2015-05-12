@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  11 MAY 2015 14:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 MAY 2015 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,9 +456,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--66
 n/index-jsp-
  []
 
-[2]
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no ´ in font ptmr7t!
+[2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 97--97
 [][][]$\OT1/ptm/m/n/8 https : / / groups . google . com / a / lists . stripe . 
@@ -595,10 +597,7 @@ Underfull \hbox (badness 2460) in paragraph at lines 350--351
 \OT1/ptm/m/n/10 tion the fields \OT1/pcr/m/n/10 workspaces, last_workspace_id,
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./notifications_query.png> <./notification_example.png>] [9]
+[8 <./notifications_query.png> <./notification_example.png>] [9]
 Underfull \hbox (badness 1728) in paragraph at lines 367--368
 []\OT1/ptm/m/n/10 To sum-ma-rize, from our ex-am-ple im-ple-men-ta-tion of
  []
@@ -610,7 +609,7 @@ Underfull \hbox (badness 1728) in paragraph at lines 367--368
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[10])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -622,30 +621,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[11
-
-] (./spy_rest.aux) ) 
+[10] (./spy_rest.aux) ) 
 Here is how much of TeX's memory you used:
  6048 strings out of 493488
  93767 string characters out of 3141326
- 217218 words of memory out of 3000000
+ 217021 words of memory out of 3000000
  9255 multiletter control sequences out of 15000+200000
  43654 words of font info for 82 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,42p,1721b,1353s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r
-.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/lo
-cal/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/te
-xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/f
-onts/type1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (11 pages, 404539 bytes).
+ 38i,12n,42p,1550b,1353s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base
+/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
+/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dis
+t/fonts/type1/urw/times/utmri8a.pfb>
+Output written on spy_rest.pdf (10 pages, 404085 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
