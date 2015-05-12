@@ -5,6 +5,7 @@
 \usepackage{cite}
 \usepackage{listings}
 \usepackage{amsmath}
+\lstset{showstringspaces=false, basicstyle=\footnotesize, numbers=left, numbersep=1pt }
 \usepackage[tableposition=top]{caption}
 \ifCLASSINFOpdf
 \usepackage[pdftex]{graphicx}
@@ -220,7 +221,7 @@ Now that we have explained the three components of SpyREST and how they work, we
 
 Fig \ref{fig:spyrest_screenshots} shows some screen shots  (content and presentation adapted for brevity) of fragments from SpyREST auto generated documentation that is solely based on an example API call to URL \url{https://api.github.com/search/repositories?q=tetris+language:assembly&sort=stars&order=desc} with a custom header ``x-spy-rest-description'' to provide the short description for the example.
 
-To show both the structure and the example usages of the API, the auto-generated API documentation features two sections, a summary section as shown in Fig. \ref{fig:summary} and an examples section as shown in Fig. \ref{fig:examples}. The summary section shows a breadcrumb containing the hierarchy of the API objects related to each API action to help API client developers easily navigate the API documentation as a tree. This section also includes three tables that display the structure of query parameters, and request and response payloads. In addition to the structure, automated type detection is used to show the data type for each field in these tables. Example values are also automatically populated for query parameters. This reduces the need for a manual effort by automating the process based on the recorded data.
+To show both the structure and the example usages of the API, the auto generated API documentation features two sections, a summary section as shown in Fig. \ref{fig:summary} and an examples section as shown in Fig. \ref{fig:examples}. The summary section includes breadcrumb to show hierarchy of the API objects related to each API action to help API client developers easily navigate the API documentation. This section also includes three tables that display the structure of query parameters, and request and response payloads. In addition to the structure, automated type detection is used to show the data type for each field in these tables. Example values are also automatically populated for query parameters. This reduces the need for a manual effort by automating the process based.
 
 The examples section on the API documentation shows all the recorded API examples for a given API action. For each example, it shows a description, the request URL, query parameters, and request and response headers and bodies. Because Spy filters out the ``authorization'' request header before saving the examples in the database, the documentation rendered by the web app displays this header with a placeholder text as ``FILTERED''. As discussed before, the Spy also computes a ``strippedResponseBody'' by truncating large arrays in API responses to contain only two samples per array. The web app displays this ``strippedResponseBody'' to limit the verbosity on the auto-generated API documentation. Not shown in Fig. \ref{fig:spyrest_screenshots} for brevity, each example in the documentation also shows the information about the API developer that ran the API example and the time when it was generated.
 
@@ -298,7 +299,6 @@ Now that we have discussed the different features offered by SpyREST, in this se
 
 We start by looking at the manually written notifications list API available at \url{https://developer.github.com/v3/activity/notifications/#list-your-notifications}. Using this API, a GitHub user can fetch notifications about different activities related to their account. To auto-generate the documentation for this API using SpyREST, we need to make some example API calls via the Spy proxy. To make the example API calls, in this demonstration, we use a REST client using a Ruby program as shown in Listing \ref{lst:notifications}.
 
-\lstset{showstringspaces=false, basicstyle=\footnotesize, numbers=left, numbersep=1pt }
 \begin{lstlisting}[language=ruby, breaklines=true, caption={}, label=list:ex, float,floatplacement=H, caption=Example API call using SpyREST, label={lst:notifications}]
 class Github
   include HTTParty
@@ -319,7 +319,6 @@ describe 'Notifications' do
   it 'List all notifications for the current user, where they are participating, since a time' do
 
     response = Github.get '/notifications?all=true&participating=true&since=2014-01-01T00:00:00Z'
-
     assert_equal 200, response.code
   end
 
@@ -347,7 +346,7 @@ Fig. \ref{fig:notifications_query} shows a screen shot of the auto generated sum
 
 In addition to showing the structure of the API objects, SpyREST displays the actual data collected from the example API on the auto generated documentation. Fig. \ref{fig:notification_example} shows a fragment of the documentation for the example API call generated from line 15 on the test code. On line 8 of our test code, we set the \texttt{authorization} header for GitHub. The Spy does not save this secret value and the auto-generated documentation displays \texttt{authorization: FILTERED} in the Request Headers section as shown in Fig. \ref{fig:notification_example}. SpyREST also automatically includes a ``Requires Authorization'' message on the documentation because of the presence of this \texttt{authorization} header. SpyREST auto generates the cURL command to allow users to execute this example API call without writing any code. As discussed earlier, SpyREST features a commenting section on every API documentation page to allow API client developers to collaborate and find relevant information on the APIs.
 
-In this case study, we have shown how a total of 24 lines of executable test code, has been used to auto-generate the documentation of the \texttt{/notifications} action for the Github API. We consider the effort required for writing the test code to be simpler than the effort that'd be required to manually write an API documentation by looking at the content and presentation of the auto generated documentation.
+In this case study, we have shown how a total of 23 lines of executable test code, has been used to auto-generate the documentation of the \texttt{/notifications} action for the Github API. We consider the effort required for writing the test code to be simpler than the effort that'd be required to manually write an API documentation by looking at the content and presentation of the auto generated documentation.
 
 \subsection{SpyREST Documentation vs. Official Documentation} % (fold)
 \label{sub:spyrest_vs_official_documentation}
@@ -374,7 +373,7 @@ To summarize, from our example implementation of SpyREST and the case-study, we 
 \subsection{Threats to Validity} % (fold)
 \label{sub:threats_to_validity}
 
-\textbf{Internal Threats.} Our proposed technique uses an HTTP proxy server that can only intercept and record the data when it is either in clear text or trusted to be decrypted by SpyREST using an intentional man-in-the-middle approach. Because SpyREST can be used as a shared platform, any secrets used in the example API calls get decrypted in memory, even though not saved by SpyREST. To overcome these threat, we recommend API developers to use disposable secrets so that the secrets used to run an API call are valid for a single API call. For use cases where this is unacceptable, the self-hosted mode can be used as an alternative. The current implementation of SpyREST is limited to work on JSON based RESTful APIs only. JSON based APIs are supported because of their widespread use among popular RESTful APIs such as Twitter, Facebook, Google Maps. To achieve similar documentation for APIs using other formats such as XML, CSV, etc., the same concepts are applicable, but would require additional implementation.
+\textbf{Internal Threats.} Our proposed technique uses an HTTP proxy server that can only intercept and record the data when it is either in clear text or trusted to be decrypted by SpyREST using an intentional man-in-the-middle approach. Because SpyREST can be used as a shared platform, any secrets used in the example API calls get decrypted in memory, even though not saved by SpyREST. To overcome these threat, we recommend API developers to use disposable secrets so that the secrets used to run an API call are valid for a single API call. For use cases where this is unacceptable, the self-hosted mode can be used as an alternative. SpyREST currently only supports JSON based APIs for their widespread use among popular RESTful APIs such as Twitter, Facebook, Google Maps. A similar approach can be used but requires future work to support other formats such as XML, and CSV.
 
 \textbf{External Threats.}  We have used SpyREST to auto generate documentation for APIs randomly sampled from three RESTful API providers as a proof of concept and found the proxy server based solution met the requirements R1-7. Further evaluation is needed involving a larger set of RESTful APIs to understand and improve the effectiveness of the proposed technique of using an HTTP proxy server for RESTful API documentation.
 
