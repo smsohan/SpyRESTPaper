@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  13 MAY 2015 09:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  13 MAY 2015 09:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,13 +589,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--359
-\OT1/pcr/m/n/10 forks_url, keys_url, collaborators_url,
+\OT1/pcr/m/n/10 forks_url, keys_url, collaborators_url\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 358--359
-\OT1/pcr/m/n/10 and 29 more \OT1/ptm/m/n/10 that were not men-tioned in the of-
-fi-cial
+Underfull \hbox (badness 2418) in paragraph at lines 358--359
+\OT1/ptm/m/n/10 and 29 more that were not men-tioned in the of-fi-cial
  []
 
 
@@ -695,7 +694,7 @@ fb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
 live/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (10 pages, 403934 bytes).
+Output written on spy_rest.pdf (10 pages, 402939 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
