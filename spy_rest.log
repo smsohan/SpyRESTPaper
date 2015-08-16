@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 AUG 2015 00:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  16 AUG 2015 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -451,140 +451,128 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 [][][]\OT1/ptm/m/n/8 http://www.oracle.com/technetwork/java/javase/documentatio
 n/index-jsp-
  []
 
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no ´ in font ptmr7t!
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 [][][]$\OT1/ptm/m/n/8 https : / / groups . google . com / a / lists . stripe . 
 com / forum / # ! searchin / api-[]discuss /
  []
 
-<spyrest_components.png, id=14, 413.545pt x 262.9825pt>
-File: spyrest_components.png Graphic file (type png)
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[][][]$\OT1/ptm/m/n/8 https : / / github . com / smsohan / demo[]paper / raw / 
+master / SpyREST[]tool[]
+ []
 
-<use spyrest_components.png>
-Package pdftex.def Info: spyrest_components.png used on input line 115.
-(pdftex.def)             Requested size: 253.04987pt x 160.92468pt.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
- [3 <./spyrest_components.png>]
-<spyrest_header.png, id=21, 429.605pt x 670.505pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 127.
+<spyrest_header.png, id=14, 429.605pt x 670.505pt>
 File: spyrest_header.png Graphic file (type png)
  <use spyrest_header.png>
-Package pdftex.def Info: spyrest_header.png used on input line 178.
+Package pdftex.def Info: spyrest_header.png used on input line 158.
 (pdftex.def)             Requested size: 209.63669pt x 327.18959pt.
 
-<spyrest_examples.png, id=22, 600.2425pt x 745.78625pt>
+<spyrest_examples.png, id=16, 600.2425pt x 745.78625pt>
 File: spyrest_examples.png Graphic file (type png)
 
 <use spyrest_examples.png>
-Package pdftex.def Info: spyrest_examples.png used on input line 183.
+Package pdftex.def Info: spyrest_examples.png used on input line 163.
 (pdftex.def)             Requested size: 262.04987pt x 325.5979pt.
+ [3] [4 <./spyrest_header.png> <./spyrest_examples.png>]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 204.
 
-Overfull \hbox (10.69345pt too wide) in paragraph at lines 215--231
-[][]
- []
-
-[4] [5 <./spyrest_header.png> <./spyrest_examples.png>]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 248.
-
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+ (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 doc-u-men-ta-tion for Github \OT1/pcr/m/n/10 GET /notifications
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 API ac-tion in-cluded 34 ad-di-tional fields, such as:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 \OT1/pcr/m/n/10 forks_url, keys_url, collaborators_url\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 248--249
+Underfull \hbox (badness 2418) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 and 29 more that were not men-tioned in the of-fi-cial
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 248--249
+Underfull \hbox (badness 6893) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 API doc-u-men-ta-tion even though ac-tu-ally re-turned as
  []
 
 
-Underfull \hbox (badness 3000) in paragraph at lines 248--249
+Underfull \hbox (badness 3000) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 API re-sponse. Sim-i-larly, the of-fi-cial doc-u-men-ta-tion fo
 r
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 248--249
+Underfull \hbox (badness 3323) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 GitHub.com \OT1/pcr/m/n/10 GET /search/code \OT1/ptm/m/n/10 API
  ac-tion did not
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 and \OT1/pcr/m/n/10 GET core/accounts/:account_id \OT1/ptm/m/n/
 10 API
  []
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 248--249
+Underfull \hbox (badness 1874) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 ac-tions did not men-tion the \OT1/pcr/m/n/10 data \OT1/ptm/m/n
 /10 field that is found
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 248--249
+Underfull \hbox (badness 5862) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 in the ac-tual re-sponse as doc-u-mented by SpyREST.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 The of-fi-cial doc-u-men-ta-tion for \OT1/pcr/m/n/10 GET /api/a
 ccount
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 ac-tion on Liq-uid-Plan-ner.com did not men-tion the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 fields \OT1/pcr/m/n/10 workspaces, last_workspace_id, and
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 248--249
+Underfull \hbox (badness 1755) in paragraph at lines 204--205
 \OT1/ptm/m/n/10 the SpyREST doc-u-men-ta-tion. These ex-am-ples show the
  []
 
-[6]
-Underfull \hbox (badness 1728) in paragraph at lines 265--266
-[]\OT1/ptm/m/n/10 To sum-ma-rize, from our ex-am-ple im-ple-men-ta-tion of
- []
-
-(./spy_rest.bbl
+[5] (./spy_rest.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[7])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -596,29 +584,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8
-
-] (./spy_rest.aux) ) 
+[6] (./spy_rest.aux) ) 
 Here is how much of TeX's memory you used:
- 5804 strings out of 493488
- 90300 string characters out of 3141326
- 150957 words of memory out of 3000000
- 9033 multiletter control sequences out of 15000+200000
+ 5795 strings out of 493488
+ 90109 string characters out of 3141326
+ 150941 words of memory out of 3000000
+ 9025 multiletter control sequences out of 15000+200000
  42233 words of font info for 80 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,38p,2321b,984s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r
-.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on spy_rest.pdf (8 pages, 212480 bytes).
+ 38i,8n,38p,1707b,984s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-di
+st/fonts/type1/urw/times/utmri8a.pfb>
+Output written on spy_rest.pdf (6 pages, 194347 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
